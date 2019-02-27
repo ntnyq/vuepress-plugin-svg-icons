@@ -23,13 +23,13 @@
     "email": "ntnyq13@gmail.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/ntntq/vuepress-plugin-svg-icons/README.md",
+  "homepage": "https://github.com/ntnyq/vuepress-plugin-svg-icons/README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ntntq/vuepress-plugin-svg-icons.git"
+    "url": "git+https://github.com/ntnyq/vuepress-plugin-svg-icons.git"
   },
   "bugs": {
-    "url": "https://github.com/ntntq/vuepress-plugin-svg-icons/issues"
+    "url": "https://github.com/ntnyq/vuepress-plugin-svg-icons/issues"
   },
   "husky": {
     "hooks": {
