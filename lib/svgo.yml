@@ -1,0 +1,11 @@
+# replace default config
+
+plugins:
+  -
+    removeDimensions: true
+  -
+    removeAttrs:
+      attrs:
+        - 'fill'
+        - 'fill-rule'
+        - 'class'

@@ -1,0 +1,11 @@
+# Basic
+.DS_Store
+node_modules
+*.log
+yarn.lock
+
+# Demo
+site
+docs
+lib/.svgs-data.js
+.eslint*
