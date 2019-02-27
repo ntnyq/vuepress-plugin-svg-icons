@@ -3,7 +3,6 @@ const path = require('path')
 module.exports = {
   title: 'Vuepress-plugin-svg-icons',
   description: '在 Vuepress 中使用 SVG sprite icon',
-  base: 'vuepress-pligin-svg-icons',
   dest: 'site',
   locals: {
     '/': {
