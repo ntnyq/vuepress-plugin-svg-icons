@@ -2,7 +2,7 @@
 
 :heart: Svg sprite plugin for [Vuepress](https://vuepress.vuejs.org)
 
-:book: [Live Demo](https://ntnyq.github.io/vuepress-pligin-svg-icons)
+:book: [Live Demo](https://ntnyq.github.io/vuepress-plugin-svg-icons)
 
 ## Install
 
