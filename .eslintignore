@@ -1,3 +1,4 @@
 node_modules
 docs
-lib/data//*.js
+lib/.*.js
+site

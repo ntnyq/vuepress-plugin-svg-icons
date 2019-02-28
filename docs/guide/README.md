@@ -4,6 +4,10 @@
 **Vuepress-plugin-svg-icons** 是一款面向 [Vuepress](https://vuepress.vuejs.org/) 用户，帮助你在 Vuepress 站点中快捷地通过 **svg-sprite-icon** 技术来使用 **SVG** 图标的插件。
 :::
 
+::: danger
+Vuepress 从 **v1.x** 开始支持插件系统，你可以通过 `npm i vuepress@next -D` 来下载，目前该版本仍在测试中。
+:::
+
 ## 安装依赖
 
 通过 NPM 或者 Yarn 安装 `@goy/vuepress-plugin-svg-icons`：
@@ -25,7 +29,7 @@ $ yarn add @goy/vuepress-plugin-svg-icons -D
 
 module.exports = {
   plugins: [
-    '@goy/vuepress-plugin-svg-icons': {
+    '@goy/svg-icons': {
       // 设置 SVG 图标文件存放路径，注意需使用 绝对路径
       svgsDir: `${__dirname}/svgs`
     }
@@ -93,7 +97,7 @@ defaultGutter | String/Number | 0 | 设置 `svg` 元素 左右外边距。
 module.exports = {
   plugins: [
     [
-      '@goy/vuepress-plugin-svg-icons',
+      '@goy/svg-icons',
       {
         svgsDir: `${__dirname}/svgs`,
         componentName: 'VI',

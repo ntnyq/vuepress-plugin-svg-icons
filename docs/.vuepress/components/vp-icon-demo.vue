@@ -12,7 +12,6 @@
         }"
       >
         <v-i
-          style="stroke-color: #000;"
           :name="icon.name"
           :color="`${ color || (bgc ? '#fff' : icon.color) }`"
           gutter="0"
