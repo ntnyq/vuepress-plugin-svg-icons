@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.0.3](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v0.0.2...v0.0.3) (2019-02-28)
+
+
+### Bug Fixes
+
+* **demo:** fix homepage icon render failed ([1f721ff](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/1f721ff))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 ## [0.0.2](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v0.0.1...v0.0.2) (2019-02-28)
 
 
