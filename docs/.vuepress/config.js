@@ -4,7 +4,7 @@ module.exports = {
   title: 'Vuepress-plugin-svg-icons',
   description: '在 Vuepress 中使用 SVG sprite icon',
   dest: 'site',
-  base: '/vuepress-plugin-svg-icons/',
+  // base: '/vuepress-plugin-svg-icons/',
   locals: {
     '/': {
       lang: 'zh-CN',
@@ -20,7 +20,7 @@ module.exports = {
         componentName: 'VI',
         classPrefix: 'vp-icon',
         defaultColor: '#aaa',
-        defaultGutter: '0.2em'
+        defaultGutter: '0.1em'
       }
     ]
   ],

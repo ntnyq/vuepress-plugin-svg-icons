@@ -6,6 +6,8 @@
 
 ## Install
 
+> Vuepress started to support plugins since v1.x, you can install it with `npm i vuepress@next -D`
+
 ``` bash
 # with npm
 $ npm install @goy/vuepress-plugin-svg-icons
@@ -21,7 +23,7 @@ $ yarn add @goy/vuepress-plugin-svg-icons
 
 module.exports = {
   plugins: [
-    '@goy/vuepress-plugin-svg-icons': {
+    '@goy/svg-icons': {
       // 设置 SVG 图标文件存放路径，注意需使用 绝对路径
       svgsDir: `${__dirname}/svgs`
     }
@@ -37,6 +39,6 @@ All `.svg` icons would be loaded automatic. And regist a vue component named `vp
 <vp-icon color="#3eaf7c"  name="vue" />
 ```
 
-[Custom options detail](https://ntnyq.github.io/vuepress-pligin-svg-icons/guide)
+[Custom options detail](https://ntnyq.github.io/vuepress-plugin-svg-icons/guide)
 
 
