@@ -4,10 +4,6 @@ module.exports = {
   title: 'Vuepress-plugin-svg-icons',
   description: '在 Vuepress 中使用 SVG sprite icon',
   dest: 'site',
-<<<<<<< HEAD
-=======
-  base: '/vuepress-plugin-svg-icons/',
->>>>>>> cdb6a0a... Update config.js
   locals: {
     '/': {
       lang: 'zh-CN',
