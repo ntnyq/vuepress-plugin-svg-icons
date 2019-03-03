@@ -1,8 +1,8 @@
 <h1 style="text-align: center;">Vuepress Plugin - SvgIcons</h1>
 
-![npm](https://img.shields.io/npm/v/@goy/vuepress-plugin-svg-icons.svg)
-![npm](https://img.shields.io/npm/dy/@goy/vuepress-plugin-svg-icons.svg)
-![npm](https://img.shields.io/npm/l/@goy/vuepress-plugin-svg-icons.svg)
+[![NPM VERSION](https://img.shields.io/npm/v/@goy/vuepress-plugin-svg-icons.svg)](https://www.npmjs.com/package/@goy/vuepress-plugin-svg-icons)
+[![NPM DOWNLOADS](https://img.shields.io/npm/dy/@goy/vuepress-plugin-svg-icons.svg)](https://www.npmjs.com/package/@goy/vuepress-plugin-svg-icons)
+[![LICENSE](https://img.shields.io/github/license/ntntq/vuepress-plugin-svg-icons.svg)](https://github.com/ntnyq/vuepress-plugin-svg-icons/blob/master/LICENSE)
 
 :heart: Svg sprite plugin for [Vuepress](https://vuepress.vuejs.org)
 

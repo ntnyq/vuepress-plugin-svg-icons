@@ -9,3 +9,4 @@ site
 docs
 lib/.svgs-data.js
 .eslint*
+.circleci
