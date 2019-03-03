@@ -1,26 +1,29 @@
 <h1 style="text-align: center;">Vuepress Plugin - SvgIcons</h1>
 
+[![CIRCLECI](https://img.shields.io/circleci/project/ntnyq/vuepress-plugin-svg-icons/master.svg?logo=circleci)](https://circleci.com/gh/ntnyq/vuepress-plugin-svg-icons)
 [![NPM VERSION](https://img.shields.io/npm/v/@goy/vuepress-plugin-svg-icons.svg)](https://www.npmjs.com/package/@goy/vuepress-plugin-svg-icons)
 [![NPM DOWNLOADS](https://img.shields.io/npm/dy/@goy/vuepress-plugin-svg-icons.svg)](https://www.npmjs.com/package/@goy/vuepress-plugin-svg-icons)
-[![LICENSE](https://img.shields.io/github/license/ntntq/vuepress-plugin-svg-icons.svg)](https://github.com/ntnyq/vuepress-plugin-svg-icons/blob/master/LICENSE)
+[![LICENSE](https://img.shields.io/github/license/ntnyq/vuepress-plugin-svg-icons.svg)](https://github.com/ntnyq/vuepress-plugin-svg-icons/blob/master/LICENSE)
 
 :heart: Svg sprite plugin for [Vuepress](https://vuepress.vuejs.org)
 
 :book: [Live Demo and Docs](https://vp-icon.goyfe.com)
 
+## Required
+
+[Vuepress](https://v1.vuepress.vuejs.org/theme/) v1.x is required for plugins supporting. You can install it by running `npm i vuepress@next -D`.
+
 ## Install
 
-> Vuepress started to support plugins since v1.x, you can install it with `npm i vuepress@next -D`
-
 ``` bash
-# with npm
 $ npm install @goy/vuepress-plugin-svg-icons
-
-# with yarn
+# OR
 $ yarn add @goy/vuepress-plugin-svg-icons
 ```
 
 # Usage
+
+You can use **vuepress-plugin-svg-icons** in your **theme**, **plugin** or the default theme wherever you like.
 
 ``` js
 // .vuepress/config.js
@@ -28,14 +31,15 @@ $ yarn add @goy/vuepress-plugin-svg-icons
 module.exports = {
   plugins: [
     '@goy/svg-icons': {
-      // 设置 SVG 图标文件存放路径，注意需使用 绝对路径
+      // Specific the folder with absolute path
+      // where your gonna put svg icons in
       svgsDir: `${__dirname}/svgs`
     }
   ]
 }
 ```
 
-All `.svg` icons would be loaded automatic. And regist a vue component named `vp-icon`.
+All `.svg` icons would be loaded automaticly. Just enjoy the vue component named `vp-icon` by default.
 
 ``` markdown
 <vp-icon  name="github" />
