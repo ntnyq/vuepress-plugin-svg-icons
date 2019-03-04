@@ -1,14 +1,16 @@
-# Guide
+# 用户引导
 
 ::: tip
-__Vuepress-plugin-svg-icons__ 是一款面向 [Vuepress](https://vuepress.vuejs.org/) 用户，帮助你在 Vuepress 站点中快捷地通过 __svg-sprite-icon__ 技术来使用 __SVG__ 图标的插件。
+**Vuepress-plugin-svg-icons** 是一款面向 [Vuepress](https://vuepress.vuejs.org/) 用户，帮助你在 Vuepress 站点中快捷地通过 **svg-sprite-icon** 技术来使用 **SVG** 图标的插件。
 :::
 
-::: warning
-[Vuepress](https://v1.vuepress.vuejs.org/theme/) v1.x is required for plugins supporting. You can install it by running `npm i vuepress@next -D`.
+::: danger
+Vuepress 从 **v1.x** 开始支持插件系统，你可以通过 `npm i vuepress@next -D` 来下载，目前该版本仍在测试中。
 :::
 
-## Install
+## 安装依赖
+
+通过 NPM 或者 Yarn 安装 `@goy/vuepress-plugin-svg-icons`：
 
 ``` bash
 $ npm install @goy/vuepress-plugin-svg-icons -D
@@ -16,10 +18,10 @@ $ npm install @goy/vuepress-plugin-svg-icons -D
 $ yarn add @goy/vuepress-plugin-svg-icons -D
 ```
 
-## Usage
+## 快速使用
 
 ::: tip
-You could get more detail about how to use plugin in __Vuepress__ by checking [Vuepress Docs](https://v1.vuepress.vuejs.org/zh/plugin/using-a-plugin.html)
+通过 [Vuepress 官方文档](https://v1.vuepress.vuejs.org/zh/plugin/using-a-plugin.html) 了解更详细的插件使用方法。
 :::
 
 ``` js
@@ -28,50 +30,37 @@ You could get more detail about how to use plugin in __Vuepress__ by checking [V
 module.exports = {
   plugins: [
     '@goy/svg-icons': {
-      // Specific the folder with absolute path
-      // where your gonna put svg icons in
+      // 设置 SVG 图标文件存放路径，注意需使用 绝对路径
       svgsDir: `${__dirname}/svgs`
     }
   ]
 }
 ```
-All `.svg` icons would be loaded automaticly.
-Just enjoy the vue component named `vp-icon` plugin supplied by default.
+所有 SVG 文件存放目录下的 `.svg` 文件将会被插件**自动**导入。
 
 ::: tip
-<!-- 建议将 SVG 文件放到 `.vuepress` 路径下，方便使用模板语法传入路径。 -->
-It't highly recommended to put all your icon SVG file in your `.vuepress` directory so that you could use __ES6__ template string to specific the `svgsDir` directory.
+建议将 SVG 文件放到 `.vuepress` 路径下，方便使用模板语法传入路径。
 
-Or you could use the __path__ module which provides an API named `path.resolve` can do the same job.
+或者可以引入 **path** 模块，使用 `path.resolve` 方法来 SVG 文件存放路径。
 :::
 
-The plugin has registed the SVG icon component itself.
+同时插件已经注册了 SVG 图标组件，你可以在你的 Vuepress Markdown 文件 或者 你的定制 `Components` 中使用它。
 
-You could use it in your __Vuepress Markdown__ file or your costom __Components__.
+默认注册的组件名为 **VpIcon**，使用方法如下：
 
-By default the plugin component name is __VpIcon__.
-
-::: warning
-A `name` attribute must provide to specific the `.svg` file name you gonna use.
-
-And this file must exist in your `svgsDir` directory.
+::: danger 注意
+必须为组件提供一个 `name` 属性，值为你想使用的 `.svg` 图标文件名，且你的 SVG 文件存档文件夹内存在同名文件。
 :::
-
-i.e:
 
 ``` markdown
 <vp-icon name="vue" />
 ```
 
-## CLI Command
+## CLI命令
 
-__Vueprss-svg-sprite-icons__ has __[SVGO](https://github.com/svg/svgo)__ intergrate and supplied a simple CLI command `vuepress svgo [docsDir]` to help you optimize you optimize your __SVG__ icon size.
+**Vueprss-svg-sprite-icons** 还集成了 **[SVGO](https://github.com/svg/svgo)**，同时对外提供了一个简单的 CLI 命令 `vuepress svgo [docsDir]`，来帮助你优化 **SVG** 图标尺寸。
 
-For usage this command，you just need do some simple configuration.
-
-Add `"svgo": "vuepress svgo docs"` [i.e] to your `package.json` file and run it then the plugin will do the rest.
-
-When the command finished, all your SVG files in `svgsDir` will be optimized in size.
+你只需要做简单的配置。编辑你的 `package.json` 文件。
 
 ``` json
 {
@@ -82,6 +71,8 @@ When the command finished, all your SVG files in `svgsDir` will be optimized in 
   }
 }
 ```
+
+假设你的文档在 `docs` 目录，你可以做如上配置，然后运行 `npm run svgo`，插件会帮你优化你存放 SVG 文件目录下所有的 `.svg` 文件。
 
 ## 更多配置
 
@@ -100,7 +91,7 @@ defaultGutter | String/Number | 0 | 设置 `svg` 元素 左右外边距。
 参数 `defaultGutter` 建议只有在想对整站多数图标添加外边距时才启用。
 :::
 
-## Example
+## 配置示例
 
 ``` js
 module.exports = {
@@ -127,7 +118,7 @@ module.exports = {
 4. 若未使用样式覆盖重写，使用组件渲染出的 `svg` 图标 默认图标的填充色将为 `#4fc08d`。
 5. 渲染出的 `svg` 图标两边将带有 `0.1em` 的外边距(`margin`)，若设置数字，则单位默认为 `px`。
 
-## Icon source
+## 图标来源
 
 1. [**Iconfont**](https://www.iconfont.cn/collections/index) 强烈推荐
 2. 设计提供或者自己设计(`Sketch`, `AI`)。

@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">Vuepress Plugin - SvgIcons</h1>
+# Vuepress Plugin - SvgIcons
 
 [![CIRCLECI](https://img.shields.io/circleci/project/ntnyq/vuepress-plugin-svg-icons/master.svg?logo=circleci)](https://circleci.com/gh/ntnyq/vuepress-plugin-svg-icons)
 [![NPM VERSION](https://img.shields.io/npm/v/@goy/vuepress-plugin-svg-icons.svg)](https://www.npmjs.com/package/@goy/vuepress-plugin-svg-icons)
@@ -23,7 +23,7 @@ $ yarn add @goy/vuepress-plugin-svg-icons
 
 # Usage
 
-You can use **vuepress-plugin-svg-icons** in your **theme**, **plugin** or the default theme wherever you like.
+You can use **vuepress-plugin-svg-icons** in **themes** and **plugins** wherever you like.
 
 ``` js
 // .vuepress/config.js
@@ -39,7 +39,8 @@ module.exports = {
 }
 ```
 
-All `.svg` icons would be loaded automaticly. Just enjoy the vue component named `vp-icon` by default.
+All `.svg` icons would be loaded automaticly.
+Just enjoy the vue component named `vp-icon` plugin supplied by default.
 
 ``` markdown
 <vp-icon  name="github" />
