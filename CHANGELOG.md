@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [0.1.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v0.0.3...v0.1.0) (2019-03-07)
+
+
+### Features
+
+* **i18n:** add i18n support and lang English ([#8](https://github.com/ntnyq/vuepress-plugin-svg-icons/issues/8)) ([2a4ea2c](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/2a4ea2c))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 ## [0.0.3](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v0.0.2...v0.0.3) (2019-02-28)
 
 
