@@ -1,7 +1,7 @@
 ---
 home: true
-actionText: Get Started →
-actionLink: /guide/
+actionText: 快速上手 →
+actionLink: /zh/guide/
 footer: MIT Licensed | Copyright © 2019-present ntnyq
 pageClass: site-home
 ---

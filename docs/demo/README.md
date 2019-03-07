@@ -2,62 +2,62 @@
 sidebar: false
 ---
 
-# 示例Demo
+# Demo
 
 ::: tip
-灵活使用CSS，你可以使用 `svg-icons` 创建出各种漂亮有趣的图标效果。
+You could create both beautiful and interesting effects via __[Vuepress-plugin-svg-icon](https://github.com/ntnyq/vuepress-plugin-svg-icons)__ with __CSS__.
 
-让你的文档更加**绚丽多彩**。
+Make your document __rich__ and __colorful__.
 :::
 
-## 无CSS样式
+## Without CSS
 
 ::: tip
-通过为组件的 `color` 属性，提供一个符合规则的颜色值。
+Pass a proper `color` value to set the fill color of svg element.
 :::
 
-### 纯色图标
+### Pure icons
 
 <vp-icon-demo color="gray" />
 
-### 列表渲染
+### Render list
 
 <vp-icon-demo />
 
-## 结合CSS
+## With CSS
 
 ::: tip
-通过使用其他元素包裹 `svg`，可以很方便地利用 CSS 样式来定制图标的展现形式。
+You could custom what your icons look like easily with CSS with the `svg` element wrapped by another element.
 :::
 
-### 背景
+### With backgroud
 
 <vp-icon-demo bgc />
 
-### 圆角
+### With corner
 
 <vp-icon-demo round bgc />
 
-## 文本
+## Text list
 
-- <v-i name="bai-yang" /> 白羊座
-- <v-i name="chu-nv" /> 处女座
-- <v-i name="jin-niu" /> 金牛座
-- <v-i name="ju-xie" /> 巨蟹座
-- <v-i name="mo-jie" /> 摩羯座
-- <v-i name="she-shou" /> 射手座
-- <v-i name="shi-zi" /> 狮子座
-- <v-i name="shuang-yu" /> 双鱼座
-- <v-i name="shuang-zi" /> 双子座
-- <v-i name="shui-ping" /> 水瓶座
-- <v-i name="tian-cheng" /> 天秤座
-- <v-i name="tian-xie" /> 天蝎座
+- <v-i name="bai-yang" /> Aries
+- <v-i name="chu-nv" /> Virgo
+- <v-i name="jin-niu" /> Taurus
+- <v-i name="ju-xie" /> Cancer
+- <v-i name="mo-jie" /> Capricorn
+- <v-i name="she-shou" /> Sagittarius
+- <v-i name="shi-zi" /> Leo
+- <v-i name="shuang-yu" /> Pisces
+- <v-i name="shuang-zi" /> Gemini
+- <v-i name="shui-ping" /> Aquarius
+- <v-i name="tian-cheng" /> Libra
+- <v-i name="tian-xie" /> Scorpio
 
-## 段落
+## In paragraph
 
 <p>
- <v-i name="bai-yang" /> 白羊座 <v-i name="chu-nv" /> 处女座 <v-i name="jin-niu" /> 金牛座 <v-i name="ju-xie" /> 巨蟹座 <v-i name="mo-jie" /> 摩羯座 <v-i name="she-shou" /> 射手座
+ <v-i name="bai-yang" /> Aries <v-i name="chu-nv" /> Virgo <v-i name="jin-niu" /> Taurus <v-i name="ju-xie" /> Cancer <v-i name="mo-jie" /> Capricorn <v-i name="she-shou" /> Sagittarius
 </p>
 <p>
- <v-i name="shi-zi" /> 狮子座 <v-i name="shuang-yu" /> 双鱼座 <v-i name="shuang-zi" /> 双子座 <v-i name="shui-ping" /> 水瓶座 <v-i name="tian-cheng" /> 天秤座 <v-i name="tian-xie" /> 天蝎座
+ <v-i name="shi-zi" /> Leo <v-i name="shuang-yu" /> Pisces <v-i name="shuang-zi" /> Gemini <v-i name="shui-ping" /> Aquarius <v-i name="tian-cheng" /> Libra <v-i name="tian-xie" /> Scorpio
 </p>
