@@ -1,8 +1,6 @@
 # Guide
 
-::: tip
-__Vuepress-plugin-svg-icons__ 是一款面向 [Vuepress](https://vuepress.vuejs.org/) 用户，帮助你在 Vuepress 站点中快捷地通过 __svg-sprite-icon__ 技术来使用 __SVG__ 图标的插件。
-:::
+__Vuepress-plugin-svg-icons__ is an simple [Vuepress](https://vuepress.vuejs.org/) __plugin__ based on __svg-sprite-icon__ techonology which helps you managing your svg icons elegant.
 
 ::: warning
 [Vuepress](https://v1.vuepress.vuejs.org/theme/) v1.x is required for plugins supporting. You can install it by running `npm i vuepress@next -D`.
@@ -19,7 +17,7 @@ $ yarn add @goy/vuepress-plugin-svg-icons -D
 ## Usage
 
 ::: tip
-You could get more detail about how to use plugin in __Vuepress__ by checking [Vuepress Docs](https://v1.vuepress.vuejs.org/zh/plugin/using-a-plugin.html)
+Get more detail about how to use plugin in __Vuepress__ by checking [Vuepress Docs](https://v1.vuepress.vuejs.org/zh/plugin/using-a-plugin.html)
 :::
 
 ``` js
@@ -39,8 +37,7 @@ All `.svg` icons would be loaded automaticly.
 Just enjoy the vue component named `vp-icon` plugin supplied by default.
 
 ::: tip
-<!-- 建议将 SVG 文件放到 `.vuepress` 路径下，方便使用模板语法传入路径。 -->
-It't highly recommended to put all your icon SVG file in your `.vuepress` directory so that you could use __ES6__ template string to specific the `svgsDir` directory.
+It't highly recommended to put all your SVG icon files' folder in your `.vuepress` directory so that you could use __ES6__ template string to specific the `svgsDir` directory.
 
 Or you could use the __path__ module which provides an API named `path.resolve` can do the same job.
 :::
@@ -83,21 +80,21 @@ When the command finished, all your SVG files in `svgsDir` will be optimized in 
 }
 ```
 
-## 更多配置
+## Options
 
-参数 | 类型 | 默认值 | 作用
+Param | Type | DefaultValue | Usage
 --- | :---: | :---: | ---
-componentName | String | VpIcon | 设置 SVG icons 组件名
-classPrefix | String | vp-icon | 设置 `svg` 元素类名和类名前缀
-defaultColor | String | currentColor | 设置所有 `svg` 元素默认填充颜色
-defaultGutter | String/Number | 0 | 设置 `svg` 元素 左右外边距。
+componentName | String | VpIcon | Custom the vue components's name
+classPrefix | String | vp-icon | Set a custom className and common class prefix
+defaultColor | String | currentColor | Set a default fill color.
+defaultGutter | String/Number | 0 | Set left & right margin.
 
 ::: warning TIP
-参数 `componentName` 建议使用 **大驼峰** 命名格式。
+It's highly recommended to set option `componentName` in `Pascal` style.
 
-参数 `defaultColor` 需要符合 SVG fill 属性颜色取值规范，否则将不会生效。
+option `defaultColor` must be a valid svg fill value.
 
-参数 `defaultGutter` 建议只有在想对整站多数图标添加外边距时才启用。
+Only if you want add a margin to almost every icons, or you didn't need to set the `defaultGutter` option.
 :::
 
 ## Example
@@ -119,16 +116,15 @@ module.exports = {
 }
 ```
 
-说明：
-
-1. 所有要用到的 SVG 图标文件将会保存到与 `config.js` 同目录层级下的 `svgs` 文件夹内。
-2. 设置插件提供的图标组件名为 `VI`，在 Markdown 中使用 `<v-i name="vue" />`。
-3. 设置插件生成的 `svg` 元素上的类为 `v-i`，说明 2 里的组件渲染出的元素上将有 `v-i` 和 `v-i-vue` 两个 `class`。
-4. 若未使用样式覆盖重写，使用组件渲染出的 `svg` 图标 默认图标的填充色将为 `#4fc08d`。
-5. 渲染出的 `svg` 图标两边将带有 `0.1em` 的外边距(`margin`)，若设置数字，则单位默认为 `px`。
+Notice:
+1. All __SVG__ icons will be put into `svgs` folder which share the same directory with `config.js` file.
+2. Set the component this plugin supplied to name `VI`. Then you can use it like this `<v-i name="vue" />` in `markdown` file.
+3. Set the icons component's common class to `v-i`，then every component will have two class by default `v-i` && `v-i-${icon_name}`.
+4. Set the svg element's default color to `#4fc08d`.
+5. Set the svg element's default `margin-left` & `margin-right`. If suppied value is  a number，it's unit will be `px` by defailt.
 
 ## Icon source
 
-1. [**Iconfont**](https://www.iconfont.cn/collections/index) 强烈推荐
-2. 设计提供或者自己设计(`Sketch`, `AI`)。
-3. 其他来源。
+1. __[Iconfont](https://www.iconfont.cn/collections/index)__ - strongly recommended
+2. From web designer or create svg file yourself using (`Sketch`, `AI`)。
+3. Etc.

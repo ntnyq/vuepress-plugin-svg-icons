@@ -13,7 +13,7 @@ Make your document __rich__ and __colorful__.
 ## Without CSS
 
 ::: tip
-通过为组件的 `color` 属性，提供一个符合规则的颜色值。
+Pass a proper `color` value to set the fill color of svg element.
 :::
 
 ### Pure icons

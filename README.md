@@ -23,7 +23,7 @@ $ yarn add @goy/vuepress-plugin-svg-icons
 
 # Usage
 
-You can use **vuepress-plugin-svg-icons** in **themes** and **plugins** wherever you like.
+You can use __vuepress-plugin-svg-icons__ in __themes__ and __plugins__ wherever you like.
 
 ``` js
 // .vuepress/config.js
