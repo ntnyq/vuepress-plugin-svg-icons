@@ -2,18 +2,18 @@ const path = require('path')
 
 module.exports = {
   title: 'Vuepress-plugin-svg-icons',
-  description: '在 Vuepress 中使用 SVG sprite icon',
+  description: '在 Vuepress 中使用 SVG sprite icons',
   dest: 'site',
   locales: {
     '/': {
       lang: 'en-US',
       title: 'Vuepress-plugin-svg-icons',
-      description: 'Using SVG sprite icon in Vuepress'
+      description: 'Using SVG sprite icons in Vuepress'
     },
     '/zh/': {
       lang: 'zh-CN',
       title: 'Vuepress-plugin-svg-icons',
-      description: '在Vuepress中使用 SVG sprite icon'
+      description: '在Vuepress中使用SVG精灵图标'
     }
   },
   plugins: [
