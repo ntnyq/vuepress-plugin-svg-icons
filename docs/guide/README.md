@@ -2,10 +2,6 @@
 
 __Vuepress-plugin-svg-icons__ is an simple [Vuepress](https://vuepress.vuejs.org/) __plugin__ based on __svg-sprite-icon__ techonology which helps you managing your svg icons elegant.
 
-::: warning
-[Vuepress](https://v1.vuepress.vuejs.org/theme/) v1.x is required for plugins supporting. You can install it by running `npm i vuepress@next -D`.
-:::
-
 ## Install
 
 ``` bash

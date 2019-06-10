@@ -4,10 +4,6 @@
 __Vuepress-plugin-svg-icons__ 是一款面向 [Vuepress](https://vuepress.vuejs.org/) 用户，帮助你在 Vuepress 站点中快捷地通过 __svg-sprite-icon__ 技术来使用 __SVG__ 图标的插件。
 :::
 
-::: danger
-Vuepress 从 __v1.x__ 开始支持插件系统，你可以通过 `npm i vuepress@next -D` 来下载，目前该版本仍在测试中。
-:::
-
 ## 安装依赖
 
 通过 NPM 或者 Yarn 安装 `@goy/vuepress-plugin-svg-icons`：

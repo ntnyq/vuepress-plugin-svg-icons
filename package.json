@@ -44,7 +44,7 @@
     ]
   },
   "peerDependencies": {
-    "vuepress": "1.0.0-alpha.47"
+    "vuepress": "^1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -55,9 +55,9 @@
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.2.2",
-    "husky": "^2.3.0",
-    "lint-staged": "^8.1.5",
-    "vuepress": "^1.0.0-alpha.48"
+    "husky": "^2.4.0",
+    "lint-staged": "^8.2.0",
+    "vuepress": "^1.0.1"
   },
   "dependencies": {
     "svg-mixer": "^2.3.8",
