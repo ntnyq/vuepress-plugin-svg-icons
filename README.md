@@ -9,10 +9,6 @@
 
 :book: [Live Demo and Docs](https://vp-icon.goyfe.com)
 
-## Required
-
-[Vuepress](https://v1.vuepress.vuejs.org/theme/) v1.x is required for plugins supporting. You can install it by running `npm i vuepress@next -D`.
-
 ## Install
 
 ``` bash
