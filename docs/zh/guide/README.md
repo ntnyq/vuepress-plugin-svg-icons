@@ -22,12 +22,13 @@ $ yarn add @goy/vuepress-plugin-svg-icons -D
 
 ``` js
 // .vuepress/config.js
+const path = require('path')
 
 module.exports = {
   plugins: [
     '@goy/svg-icons': {
-      // 设置 SVG 图标文件存放路径，注意需使用 绝对路径
-      svgsDir: `${__dirname}/svgs`
+      // 设置 SVG 图标文件存放路径，注意要提供一个绝对路径
+      svgsDir: path.resolve(__dirname, 'svgs')
     }
   ]
 }
@@ -90,12 +91,14 @@ defaultGutter | String/Number | 0 | 设置 `svg` 元素 左右外边距。
 ## 配置示例
 
 ``` js
+const path = require('path')
+
 module.exports = {
   plugins: [
     [
       '@goy/svg-icons',
       {
-        svgsDir: `${__dirname}/svgs`,
+        svgsDir: path.resolve(__dirname, 'svgs')
         componentName: 'VI',
         classPrefix: 'v-i',
         defaultColor: '#aaa',

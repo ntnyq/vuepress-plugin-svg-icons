@@ -23,13 +23,14 @@ You can use __vuepress-plugin-svg-icons__ in __themes__ and __plugins__ wherever
 
 ``` js
 // .vuepress/config.js
+const path = require('path')
 
 module.exports = {
   plugins: [
     '@goy/svg-icons': {
-      // Specific the folder with absolute path
-      // where your gonna put svg icons in
-      svgsDir: `${__dirname}/svgs`
+      // Provide a folder in absolute path
+      // where your gonna put svg icon files in
+      svgsDir: path.resolve(__dirname, 'svgs')
     }
   ]
 }

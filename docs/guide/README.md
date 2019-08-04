@@ -18,13 +18,14 @@ Get more detail about how to use plugin in __Vuepress__ by checking [Vuepress Do
 
 ``` js
 // .vuepress/config.js
+const path = require('path')
 
 module.exports = {
   plugins: [
     '@goy/svg-icons': {
-      // Specific the folder with absolute path
-      // where your gonna put svg icons in
-      svgsDir: `${__dirname}/svgs`
+      // Provide a folder in absolute path
+      // where your gonna put svg icon files in
+      svgsDir: path.resolve(__dirname, 'svgs')
     }
   ]
 }
@@ -96,12 +97,14 @@ Only if you want add a margin to almost every icons, or you didn't need to set t
 ## Example
 
 ``` js
+const path = require('path')
+
 module.exports = {
   plugins: [
     [
       '@goy/svg-icons',
       {
-        svgsDir: `${__dirname}/svgs`,
+        svgsDir: path.resolve(__dirname, 'svgs')
         componentName: 'VI',
         classPrefix: 'v-i',
         defaultColor: '#aaa',
