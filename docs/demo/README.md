@@ -4,30 +4,20 @@ sidebar: false
 
 # Demo
 
-::: tip
-You could create both beautiful and interesting effects via __[Vuepress-plugin-svg-icon](https://github.com/ntnyq/vuepress-plugin-svg-icons)__ with __CSS__.
+You can create beautiful and interesting effects via __[vuepress-plugin-svg-icon](https://github.com/ntnyq/vuepress-plugin-svg-icons)__ with __CSS__ styles.
 
-Make your document __rich__ and __colorful__.
-:::
-
-## Without CSS
-
-::: tip
-Pass a proper `color` value to set the fill color of svg element.
-:::
-
-### Pure icons
+## Default
 
 <vp-icon-demo color="gray" />
 
-### Render list
+## With color
 
 <vp-icon-demo />
 
 ## With CSS
 
 ::: tip
-You could custom what your icons look like easily with CSS with the `svg` element wrapped by another element.
+With some CSS style and wrapped in an element, your icons will be magical.
 :::
 
 ### With backgroud

@@ -4,23 +4,13 @@ sidebar: false
 
 # 示例Demo
 
-::: tip
-灵活使用CSS，你可以使用 `svg-icons` 创建出各种漂亮有趣的图标效果。
+灵活使用CSS，你可以使用 __[vuepress-plugin-svg-icon](https://github.com/ntnyq/vuepress-plugin-svg-icons)__ 创建出各种漂亮有趣的图标效果。
 
-让你的文档更加 __绚丽多彩__。
-:::
-
-## 无CSS样式
-
-::: tip
-通过为组件的 `color` 属性，提供一个符合规则的颜色值。
-:::
-
-### 纯色图标
+## 默认图标
 
 <vp-icon-demo color="gray" />
 
-### 列表渲染
+## 自定义颜色
 
 <vp-icon-demo />
 

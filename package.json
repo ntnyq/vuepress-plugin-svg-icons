@@ -5,17 +5,20 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "lint": "eslint --fix --ext .js,.vue",
+    "lint": "eslint --fix --ext .js,.vue .",
     "svgo": "vuepress svgo docs"
   },
   "keywords": [
     "vuepress",
-    "plugin",
-    "icons",
+    "vuepress-plugin",
+    "icon",
     "svg",
     "sprite"
   ],
-  "description": "Svg sprite plugin for Vuepress",
+  "files": [
+    "lib/"
+  ],
+  "description": "Svg sprite icon plugin for VuePress",
   "publishConfig": {
     "access": "public"
   },

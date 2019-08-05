@@ -1,12 +1,8 @@
 # 用户引导
 
-::: tip
-__Vuepress-plugin-svg-icons__ 是一款面向 [Vuepress](https://vuepress.vuejs.org/) 用户，帮助你在 Vuepress 站点中快捷地通过 __svg-sprite-icon__ 技术来使用 __SVG__ 图标的插件。
-:::
+__Vuepress-plugin-svg-icons__ 是一款方便 VuePress 用户使用 __svg-sprite-icon__ 图标技术的插件。
 
 ## 安装依赖
-
-通过 NPM 或者 Yarn 安装 `@goy/vuepress-plugin-svg-icons`：
 
 ``` bash
 $ npm install @goy/vuepress-plugin-svg-icons -D
@@ -14,50 +10,102 @@ $ npm install @goy/vuepress-plugin-svg-icons -D
 $ yarn add @goy/vuepress-plugin-svg-icons -D
 ```
 
-## 快速使用
+## 简单使用
 
-::: tip
-通过 [Vuepress 官方文档](https://v1.vuepress.vuejs.org/zh/plugin/using-a-plugin.html) 了解更详细的插件使用方法。
-:::
+> 查阅 [官方文档](https://v1.vuepress.vuejs.org/zh/plugin/using-a-plugin.html) 了解如何在 VuePress 中使用插件。
+
+在配置文件中引入 __vuepress-plugin-svg-icons__ 。
 
 ``` js
-// .vuepress/config.js
-const path = require('path')
-
 module.exports = {
   plugins: [
-    '@goy/svg-icons': {
-      // 设置 SVG 图标文件存放路径，注意要提供一个绝对路径
-      svgsDir: path.resolve(__dirname, 'svgs')
-    }
+    '@goy/svg-icons'
   ]
 }
 ```
-所有 SVG 文件存放目录下的 `.svg` 文件将会被插件 __自动__ 导入。
 
-::: tip
-建议将 SVG 文件放到 `.vuepress` 路径下，方便使用模板语法传入路径。
+在你的 VuePress 文档根目录下创建名为 `icons` 的文件夹，并将你需要插件管理的 `.svg` 文件都放入其中。
 
-或者可以引入 __path__ 模块，使用 `path.resolve` 方法来 SVG 文件存放路径。
+所有的图标文件都会被插件自动导入。
+
+插件对外提供了一个名为 __`VpIcon`__ 的 __全局组件__ 。
+
+开始使用吧!
+
+::: warning
+必须为组件提供一个 `name` 属性，值为你想使用的 `.svg` 图标文件名。
+
+且你的 `.svg` 文件存放文件夹内必须存在同名文件。
 :::
 
-同时插件已经注册了 SVG 图标组件，你可以在你的 Vuepress Markdown 文件 或者 你的定制 `Components` 中使用它。
-
-默认注册的组件名为 __VpIcon__，使用方法如下：
-
-::: danger 注意
-必须为组件提供一个 `name` 属性，值为你想使用的 `.svg` 图标文件名，且你的 SVG 文件存档文件夹内存在同名文件。
-:::
+例:
 
 ``` markdown
 <vp-icon name="vue" />
 ```
 
+## 配置详解
+
+高级应用：
+
+``` js
+module.exports = {
+  plugins: [
+    ['@goy/svg-icons', {
+      svgsDir: 'svgs',
+      componentName: 'SvgIcon',
+      classPrefix: 'icon',
+      defaultColor: '#333',
+      defaultGutter: '0.1em'
+    }]
+  ]
+}
+```
+
+### svgsDir
+
+- __type:__ `string`
+- __default:__ `icons`
+
+存放 `.svg` 文件的目录地址。
+
+如果提供的为相对地址，则会以 VuePress 文档根目录为基准确定图标文件夹地址。
+
+### componentName
+
+- __type:__ `string`
+- __default:__ `VpIcon`
+
+自定义的替代默认 `VpIcon` 的全局组件组件名。
+
+强烈建议使用 `Pascal` 形式的命名。（单词首字母大写）
+
+### classPrefix
+
+- __type:__ `string`
+- __default:__ `vp-icon`
+
+所有 SVG 元素的通用 `class` 属性和 `class` 属性前缀。
+
+### defaultColor
+
+- __type:__ `string`
+- __default:__ `currentColor`
+
+使用时未提供颜色情况下，所有 SVG 元素的通用颜色。
+
+### defaultGutter
+
+- __type:__ `string | number`
+- __default:__ 0
+
+所有 SVG 元素的左右外边距。
+
+如果提供的值为数字，则其单位为 `px`。
+
 ## CLI命令
 
-__Vueprss-svg-sprite-icons__ 还集成了 __[SVGO](https://github.com/svg/svgo)__，同时对外提供了一个简单的 CLI 命令 `vuepress svgo [docsDir]`，来帮助你优化 __SVG__ 图标尺寸。
-
-你只需要做简单的配置。编辑你的 `package.json` 文件。
+__Vueprss-svg-sprite-icons__ 集成了 __[SVGO](https://github.com/svg/svgo)__，同时对外提供了一个 CLI 命令 `vuepress svgo [docsDir]`，来帮助你优化 __SVG__ 图标大小。
 
 ``` json
 {
@@ -69,53 +117,7 @@ __Vueprss-svg-sprite-icons__ 还集成了 __[SVGO](https://github.com/svg/svgo)_
 }
 ```
 
-假设你的文档在 `docs` 目录，你可以做如上配置，然后运行 `npm run svgo`，插件会帮你优化你存放 SVG 文件目录下所有的 `.svg` 文件。
-
-## 更多配置
-
-参数 | 类型 | 默认值 | 作用
---- | :---: | :---: | ---
-componentName | String | VpIcon | 设置 SVG icons 组件名
-classPrefix | String | vp-icon | 设置 `svg` 元素类名和类名前缀
-defaultColor | String | currentColor | 设置所有 `svg` 元素默认填充颜色
-defaultGutter | String/Number | 0 | 设置 `svg` 元素 左右外边距。
-
-::: warning TIP
-参数 `componentName` 建议使用 __大驼峰__ 命名格式。
-
-参数 `defaultColor` 需要符合 SVG fill 属性颜色取值规范，否则将不会生效。
-
-参数 `defaultGutter` 建议只有在想对整站多数图标添加外边距时才启用。
-:::
-
-## 配置示例
-
-``` js
-const path = require('path')
-
-module.exports = {
-  plugins: [
-    [
-      '@goy/svg-icons',
-      {
-        svgsDir: path.resolve(__dirname, 'svgs')
-        componentName: 'VI',
-        classPrefix: 'v-i',
-        defaultColor: '#aaa',
-        defaultGutter: '0.1em'
-      }
-    ]
-  ]
-}
-```
-
-说明：
-
-1. 所有要用到的 SVG 图标文件将会保存到与 `config.js` 同目录层级下的 `svgs` 文件夹内。
-2. 设置插件提供的图标组件名为 `VI`，在 Markdown 中使用 `<v-i name="vue" />`。
-3. 设置插件生成的 `svg` 元素上的类为 `v-i`，说明 2 里的组件渲染出的元素上将有 `v-i` 和 `v-i-vue` 两个 `class`。
-4. 若未使用样式覆盖重写，使用组件渲染出的 `svg` 图标 默认图标的填充色将为 `#4fc08d`。
-5. 渲染出的 `svg` 图标两边将带有 `0.1em` 的外边距(`margin`)，若设置数字，则单位默认为 `px`。
+假设你的 VuePress 文档在 `docs` 目录，你可以做如上配置，然后运行 `npm run svgo`，插件会帮你优化目录下所有的 `.svg` 文件大小。
 
 ## 图标来源
 
