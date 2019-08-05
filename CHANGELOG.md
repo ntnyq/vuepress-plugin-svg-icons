@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v1.0.1...v2.0.0) (2019-08-05)
+
+
+### Build System
+
+* **deps:** bump lodash.template from 4.4.0 to 4.5.0 ([c112afb](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/c112afb))
+
+
+### Features
+
+* refine plugin configuration ([52191a2](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/52191a2))
+
+
+
 ### [1.0.1](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v1.0.0...v1.0.1) (2019-08-04)
 
 
