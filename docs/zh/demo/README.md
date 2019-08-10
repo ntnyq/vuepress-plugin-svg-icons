@@ -12,6 +12,10 @@ sidebar: false
 
 ## 自定义颜色
 
+``` vue
+<vp-icon name="vue" color="#3eaf7c" />
+```
+
 <vp-icon-demo />
 
 ## 结合CSS

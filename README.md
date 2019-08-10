@@ -40,7 +40,7 @@ Just enjoy it!
 ``` markdown
 <vp-icon name="github" />
 
-<vp-icon color="#3eaf7c"  name="vue" />
+<vp-icon color="#3eaf7c" name="vue" />
 ```
 
 [Custom options detail](https://vp-icon.goyfe.com/guide)

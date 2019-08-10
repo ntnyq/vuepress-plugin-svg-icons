@@ -5,11 +5,8 @@ module.exports = {
   },
   extends: [
     'plugin:vue/strongly-recommended',
-    'standard'
+    'goy'
   ],
-  rules: {
-
-  },
   parserOptions: {
     parser: 'babel-eslint'
   }

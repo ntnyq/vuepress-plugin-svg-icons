@@ -12,6 +12,10 @@ You can create beautiful and interesting effects via __[vuepress-plugin-svg-icon
 
 ## With color
 
+``` vue
+<vp-icon name="vue" color="#3eaf7c" />
+```
+
 <vp-icon-demo />
 
 ## With CSS
