@@ -56,6 +56,7 @@ module.exports = {
       componentName: 'SvgIcon',
       iconIdPrefix: 'svg_icon_',
       iconClassPrefix: 'svg-icon-',
+      iconCommonClass: 'svg-icon',
       defaultColor: '#333',
       defaultGutter: '0.1em'
     }]
@@ -93,7 +94,14 @@ Your custom id prefix for all svg symbols.
 - __type:__ `string`
 - __default:__ `vp-icon-`
 
-Your custom class and class prefix for all svg element.
+Your custom class prefix for all svg element.
+
+### iconCommonClass
+
+- __type:__ `string`
+- __default:__ `vp-icon`
+
+Your custom class for all svg element.
 
 ### defaultColor
 

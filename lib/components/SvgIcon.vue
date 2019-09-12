@@ -31,6 +31,11 @@ export default {
       type: String,
       default: undefined,
     },
+
+    iconCommonClass: {
+      type: String,
+      default: undefined,
+    },
   },
 
   computed: {
@@ -47,7 +52,7 @@ export default {
       return ({
         style,
         'aria-hidden': 'true',
-        class: [this.iconClassPrefix, this.iconClassPrefix + this.name],
+        class: [this.iconCommonClass, this.iconClassPrefix + this.name],
       })
     },
   },

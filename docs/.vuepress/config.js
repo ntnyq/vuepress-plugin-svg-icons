@@ -22,6 +22,7 @@ module.exports = {
       componentName: 'MyIcon',
       iconIdPrefix: 'my_icon_',
       iconClassPrefix: 'my-icon-',
+      iconCommonClass: 'my-icon',
       defaultColor: '#aaa',
       defaultGutter: '0.1em'
     }]

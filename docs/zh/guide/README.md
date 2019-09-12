@@ -56,6 +56,7 @@ module.exports = {
       componentName: 'SvgIcon',
       iconIdPrefix: 'svg_icon_',
       iconClassPrefix: 'svg-icon-',
+      iconCommonClass: 'svg-icon',
       defaultColor: '#333',
       defaultGutter: '0.1em'
     }]
@@ -93,7 +94,14 @@ SVG Sprite 中 `symbol` 的通用 `id` 前缀。
 - __type:__ `string`
 - __default:__ `vp-icon-`
 
-所有 SVG 元素的通用 `class` 属性和 `class` 属性前缀。
+所有 SVG 元素的通用 `class` 属性前缀。
+
+### iconCommonClass
+
+- __type:__ `string`
+- __default:__ `vp-icon`
+
+所有 SVG 元素的通用 `class` 属性。
 
 ### defaultColor
 
