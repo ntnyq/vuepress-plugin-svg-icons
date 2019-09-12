@@ -1,4 +1,4 @@
-# Vuepress Plugin - SvgIcons
+# vuepress-plugin-svg-icons
 
 [![CIRCLECI](https://img.shields.io/circleci/project/ntnyq/vuepress-plugin-svg-icons/master.svg?logo=circleci)](https://circleci.com/gh/ntnyq/vuepress-plugin-svg-icons)
 [![NPM VERSION](https://img.shields.io/npm/v/@goy/vuepress-plugin-svg-icons.svg)](https://www.npmjs.com/package/@goy/vuepress-plugin-svg-icons)
@@ -12,9 +12,9 @@
 ## Install
 
 ``` bash
-$ npm install @goy/vuepress-plugin-svg-icons
+$ npm install @goy/vuepress-plugin-svg-icons -D
 # OR
-$ yarn add @goy/vuepress-plugin-svg-icons
+$ yarn add @goy/vuepress-plugin-svg-icons -D
 ```
 
 # Usage
@@ -29,11 +29,11 @@ module.exports = {
 }
 ```
 
-Create a folder named `icons` in your document `sourceDir` and put all your `.svg` files in it.
+Create a folder named `icons` in your document `sourceDir` and put all your svg files in it.
 
 All icons will be loaded automaticly. 
 
-The plugin provide a __global component__ named __`vp-icon`__. 
+The plugin provides a global component named __`vp-icon`__. 
 
 Just enjoy it!
 

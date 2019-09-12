@@ -43,57 +43,51 @@ export default {
   props: {
     bgc: {
       type: Boolean,
-      default: false
+      default: false,
     },
 
     round: {
       type: Boolean,
-      default: false
+      default: false,
     },
 
     color: {
       type: String,
-      default: ''
+      default: '',
     }
   },
 
   data () {
     return {
-      icons
+      icons,
     }
-  }
+  },
 }
 </script>
 
 <style lang="stylus">
-.vp-icon-demo {
-  padding: 20px 0;
+.vp-icon-demo
+  padding 20px 0
 
-  .icon {
-    &-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      padding-left: 0;
-      list-style: none;
-    }
+  .icon
+    &-list
+      display flex
+      flex-wrap wrap
+      justify-content center
+      align-items center
+      padding-left 0
+      list-style none
 
-    &-item {
-      padding: 8px;
-      margin: 10px;
-      border-radius: 4px;
-      line-height: 1;
-      font-size: 40px;
+    &-item
+      padding 8px
+      margin 10px
+      border-radius 4px
+      line-height 1
+      font-size 40px
 
-      &.has-shadow {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-      }
+      &.has-shadow
+        box-shadow 0 2px 4px rgba(0, 0, 0, 0.15)
 
-      &.is-round {
-        border-radius: 50%;
-      }
-    }
-  }
-}
+      &.is-round
+        border-radius 50%
 </style>

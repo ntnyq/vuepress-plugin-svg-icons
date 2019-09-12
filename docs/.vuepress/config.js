@@ -1,32 +1,31 @@
 const { resolve } = require('path')
 
+const CHANGELOG_LINK = `https://github.com/ntnyq/vuepress-plugin-svg-icons/blob/master/CHANGELOG.md`
+
 module.exports = {
-  title: 'Vuepress-plugin-svg-icons',
+  title: 'vuepress-plugin-svg-icons',
   description: '在 VuePress 中使用 SVG sprite icons',
   dest: 'site',
   locales: {
     '/': {
       lang: 'en-US',
-      title: 'Vuepress-plugin-svg-icons',
+      title: 'vuepress-plugin-svg-icons',
       description: 'Using SVG sprite icons in VuePress'
     },
     '/zh/': {
       lang: 'zh-CN',
-      title: 'Vuepress-plugin-svg-icons',
+      title: 'vuepress-plugin-svg-icons',
       description: '在Vuepress中使用SVG精灵图标'
     }
   },
   plugins: [
-    [
-      require(resolve(__dirname, '../../lib')),
-      {
-        svgsDir: 'icons',
-        componentName: 'VI',
-        classPrefix: 'vp-icon',
-        defaultColor: '#aaa',
-        defaultGutter: '0.1em'
-      }
-    ]
+    [require(resolve(__dirname, '../../lib')), {
+      svgsDir: 'icons',
+      componentName: 'VI',
+      classPrefix: 'vp-icon',
+      defaultColor: '#aaa',
+      defaultGutter: '0.1em'
+    }]
   ],
   themeConfig: {
     repo: 'ntnyq/vuepress-plugin-svg-icons',
@@ -46,7 +45,7 @@ module.exports = {
           { text: 'Home', link: '/' },
           { text: 'Guide', link: '/guide/' },
           { text: 'Demo', link: '/demo/' },
-          { text: 'Changelog', link: 'https://github.com/ntnyq/vuepress-plugin-svg-icons/blob/master/CHANGELOG.md' }
+          { text: 'Changelog', link: CHANGELOG_LINK }
         ],
         sidebar: ['/guide/']
       },
@@ -59,7 +58,7 @@ module.exports = {
           { text: '首页', link: '/zh/' },
           { text: '配置引导', link: '/zh/guide/' },
           { text: '示例Demo', link: '/zh/demo/' },
-          { text: '更新日志', link: 'https://github.com/ntnyq/vuepress-plugin-svg-icons/blob/master/CHANGELOG.md' }
+          { text: '更新日志', link: CHANGELOG_LINK }
         ],
         sidebar: ['/zh/guide/']
       }
