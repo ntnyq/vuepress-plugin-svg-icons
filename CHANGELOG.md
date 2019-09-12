@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v3.0.0...v3.1.0) (2019-09-12)
+
+
+### Features
+
+* add svg icon common class ([ab7fcc9](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/ab7fcc9))
+
 ## [3.0.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v2.0.1...v3.0.0) (2019-09-12)
 
 
