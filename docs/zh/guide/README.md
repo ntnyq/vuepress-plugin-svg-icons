@@ -1,6 +1,6 @@
 # 用户引导
 
-__Vuepress-plugin-svg-icons__ 是一款方便 VuePress 用户使用 __svg-sprite-icon__ 图标技术的插件。
+vuepress-plugin-svg-icons 是一款方便 VuePress 用户使用 __svg-sprite-icon__ 技术的插件。
 
 ## 安装依赖
 
@@ -14,7 +14,7 @@ $ yarn add @goy/vuepress-plugin-svg-icons -D
 
 > 查阅 [官方文档](https://v1.vuepress.vuejs.org/zh/plugin/using-a-plugin.html) 了解如何在 VuePress 中使用插件。
 
-在配置文件中引入 __vuepress-plugin-svg-icons__ 。
+编辑配置文件 `.vuepress/config.js`
 
 ``` js
 module.exports = {
@@ -24,18 +24,18 @@ module.exports = {
 }
 ```
 
-在你的 VuePress 文档根目录下创建名为 `icons` 的文件夹，并将你需要插件管理的 `.svg` 文件都放入其中。
+在你的 VuePress 文档根目录下创建名为 `icons` 的文件夹，并将你需要插件管理的 SVG 文件都放入其中。
 
 所有的图标文件都会被插件自动导入。
 
-插件对外提供了一个名为 __`VpIcon`__ 的 __全局组件__ 。
+插件对外提供了一个默认名为 __`VpIcon`__ 的 __全局组件__ 。
 
 开始使用吧!
 
 ::: warning
-必须为组件提供一个 `name` 属性，值为你想使用的 `.svg` 图标文件名。
+必须为组件提供一个 `name` 属性，值为你要使用的 SVG 图标文件名。
 
-且你的 `.svg` 文件存放文件夹内必须存在同名文件。
+且对应的 SVG 文件存放文件夹内必须存在同名文件。
 :::
 
 例:
@@ -54,7 +54,8 @@ module.exports = {
     ['@goy/svg-icons', {
       svgsDir: 'svgs',
       componentName: 'SvgIcon',
-      classPrefix: 'icon',
+      iconIdPrefix: 'svg_icon_',
+      iconClassPrefix: 'svg-icon-',
       defaultColor: '#333',
       defaultGutter: '0.1em'
     }]
@@ -80,10 +81,17 @@ module.exports = {
 
 强烈建议使用 `Pascal` 形式的命名。（单词首字母大写）
 
-### classPrefix
+### iconIdPrefix
 
 - __type:__ `string`
-- __default:__ `vp-icon`
+- __default:__ `vp_icon_`
+
+SVG Sprite 中 `symbol` 的通用 `id` 前缀。
+
+### iconClassPrefix
+
+- __type:__ `string`
+- __default:__ `vp-icon-`
 
 所有 SVG 元素的通用 `class` 属性和 `class` 属性前缀。
 
@@ -105,7 +113,7 @@ module.exports = {
 
 ## CLI命令
 
-__Vueprss-svg-sprite-icons__ 集成了 __[SVGO](https://github.com/svg/svgo)__，同时对外提供了一个 CLI 命令 `vuepress svgo [docsDir]`，来帮助你优化 __SVG__ 图标大小。
+vueprss-svg-sprite-icons 集成了 __[SVGO](https://github.com/svg/svgo)__，同时对外提供了一个 CLI 命令 `vuepress svgo [docsDir]`，来帮助你优化 SVG 图标体积。
 
 ``` json
 {
@@ -117,10 +125,10 @@ __Vueprss-svg-sprite-icons__ 集成了 __[SVGO](https://github.com/svg/svgo)__�
 }
 ```
 
-假设你的 VuePress 文档在 `docs` 目录，你可以做如上配置，然后运行 `npm run svgo`，插件会帮你优化目录下所有的 `.svg` 文件大小。
+假设你的 VuePress 文档在 `docs` 目录，你可以做如上配置，再运行 `npm run svgo` 进行图标优化。
 
 ## 图标来源
 
-1. [**Iconfont**](https://www.iconfont.cn/collections/index) 强烈推荐
-2. 设计提供或者自己设计(`Sketch`, `AI`)。
+1. 强烈推荐 __[Iconfont](https://www.iconfont.cn/collections/index)__ 
+2. 设计提供或者自己设计(`Sketch`, `AI`)
 3. 其他来源。

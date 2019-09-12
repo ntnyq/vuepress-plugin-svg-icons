@@ -11,7 +11,7 @@
           'is-round': round
         }"
       >
-        <v-i
+        <my-icon
           :name="icon.name"
           :color="`${ color || (bgc ? '#fff' : icon.color) }`"
           gutter="0"

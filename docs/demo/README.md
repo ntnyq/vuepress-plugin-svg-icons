@@ -34,24 +34,34 @@ With some CSS style and wrapped in an element, your icons will be magical.
 
 ## Text list
 
-- <v-i name="bai-yang" /> Aries
-- <v-i name="chu-nv" /> Virgo
-- <v-i name="jin-niu" /> Taurus
-- <v-i name="ju-xie" /> Cancer
-- <v-i name="mo-jie" /> Capricorn
-- <v-i name="she-shou" /> Sagittarius
-- <v-i name="shi-zi" /> Leo
-- <v-i name="shuang-yu" /> Pisces
-- <v-i name="shuang-zi" /> Gemini
-- <v-i name="shui-ping" /> Aquarius
-- <v-i name="tian-cheng" /> Libra
-- <v-i name="tian-xie" /> Scorpio
+- <my-icon name="bai-yang" /> Aries
+- <my-icon name="chu-nv" /> Virgo
+- <my-icon name="jin-niu" /> Taurus
+- <my-icon name="ju-xie" /> Cancer
+- <my-icon name="mo-jie" /> Capricorn
+- <my-icon name="she-shou" /> Sagittarius
+- <my-icon name="shi-zi" /> Leo
+- <my-icon name="shuang-yu" /> Pisces
+- <my-icon name="shuang-zi" /> Gemini
+- <my-icon name="shui-ping" /> Aquarius
+- <my-icon name="tian-cheng" /> Libra
+- <my-icon name="tian-xie" /> Scorpio
 
 ## In paragraph
 
 <p>
- <v-i name="bai-yang" /> Aries <v-i name="chu-nv" /> Virgo <v-i name="jin-niu" /> Taurus <v-i name="ju-xie" /> Cancer <v-i name="mo-jie" /> Capricorn <v-i name="she-shou" /> Sagittarius
+ <my-icon name="bai-yang" /> Aries 
+ <my-icon name="chu-nv" /> Virgo 
+ <my-icon name="jin-niu" /> Taurus 
+ <my-icon name="ju-xie" /> Cancer 
+ <my-icon name="mo-jie" /> Capricorn 
+ <my-icon name="she-shou" /> Sagittarius
 </p>
 <p>
- <v-i name="shi-zi" /> Leo <v-i name="shuang-yu" /> Pisces <v-i name="shuang-zi" /> Gemini <v-i name="shui-ping" /> Aquarius <v-i name="tian-cheng" /> Libra <v-i name="tian-xie" /> Scorpio
+ <my-icon name="shi-zi" /> Leo 
+ <my-icon name="shuang-yu" /> Pisces 
+ <my-icon name="shuang-zi" /> Gemini 
+ <my-icon name="shui-ping" /> Aquarius 
+ <my-icon name="tian-cheng" /> Libra 
+ <my-icon name="tian-xie" /> Scorpio
 </p>

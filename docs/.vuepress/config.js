@@ -1,5 +1,3 @@
-const { resolve } = require('path')
-
 const CHANGELOG_LINK = `https://github.com/ntnyq/vuepress-plugin-svg-icons/blob/master/CHANGELOG.md`
 
 module.exports = {
@@ -15,14 +13,15 @@ module.exports = {
     '/zh/': {
       lang: 'zh-CN',
       title: 'vuepress-plugin-svg-icons',
-      description: '在Vuepress中使用SVG精灵图标'
+      description: '在VuePress中使用SVG精灵图标'
     }
   },
   plugins: [
-    [require(resolve(__dirname, '../../lib')), {
+    [require('../../lib'), {
       svgsDir: 'icons',
-      componentName: 'VI',
-      classPrefix: 'vp-icon',
+      componentName: 'MyIcon',
+      iconIdPrefix: 'my_icon_',
+      iconClassPrefix: 'my-icon-',
       defaultColor: '#aaa',
       defaultGutter: '0.1em'
     }]
