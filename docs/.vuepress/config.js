@@ -8,13 +8,13 @@ module.exports = {
     '/': {
       lang: 'en-US',
       title: 'vuepress-plugin-svg-icons',
-      description: 'Using SVG sprite icons in VuePress'
+      description: 'Using SVG sprite icons in VuePress',
     },
     '/zh/': {
       lang: 'zh-CN',
       title: 'vuepress-plugin-svg-icons',
-      description: '在VuePress中使用SVG精灵图标'
-    }
+      description: '在VuePress中使用SVG精灵图标',
+    },
   },
   plugins: [
     [require('../../lib'), {
@@ -24,8 +24,8 @@ module.exports = {
       iconClassPrefix: 'my-icon-',
       iconCommonClass: 'my-icon',
       defaultColor: '#aaa',
-      defaultGutter: '0.1em'
-    }]
+      defaultGutter: '0.1em',
+    }],
   ],
   themeConfig: {
     repo: 'ntnyq/vuepress-plugin-svg-icons',
@@ -45,9 +45,9 @@ module.exports = {
           { text: 'Home', link: '/' },
           { text: 'Guide', link: '/guide/' },
           { text: 'Demo', link: '/demo/' },
-          { text: 'Changelog', link: CHANGELOG_LINK }
+          { text: 'Changelog', link: CHANGELOG_LINK },
         ],
-        sidebar: ['/guide/']
+        sidebar: ['/guide/'],
       },
       '/zh/': {
         label: '简体中文',
@@ -58,10 +58,10 @@ module.exports = {
           { text: '首页', link: '/zh/' },
           { text: '配置引导', link: '/zh/guide/' },
           { text: '示例Demo', link: '/zh/demo/' },
-          { text: '更新日志', link: CHANGELOG_LINK }
+          { text: '更新日志', link: CHANGELOG_LINK },
         ],
-        sidebar: ['/zh/guide/']
-      }
-    }
-  }
+        sidebar: ['/zh/guide/'],
+      },
+    },
+  },
 }

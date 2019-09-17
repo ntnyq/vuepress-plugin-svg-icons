@@ -34,7 +34,7 @@ const icons = [
   { name: 'shuang-zi', color: '#3da085' },
   { name: 'shui-ping', color: '#3097f5' },
   { name: 'tian-cheng', color: '#317bf3' },
-  { name: 'tian-xie', color: '#d64f7e' }
+  { name: 'tian-xie', color: '#d64f7e' },
 ]
 
 export default {
@@ -54,7 +54,7 @@ export default {
     color: {
       type: String,
       default: '',
-    }
+    },
   },
 
   data () {
