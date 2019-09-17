@@ -33,9 +33,9 @@ The plugin provide a __global component__ named __`VpIcon`__.
 Just enjoy it!
 
 ::: warning
-A `name` attribute must provide to specific the SVG file name you gonna use.
+A `name` attribute must be provided to specific the SVG file name you gonna use.
 
-And the file must exist wherever you put your SVG files in. 
+And the file must exists wherever you put your SVG files in. 
 :::
 
 i.e:
@@ -44,9 +44,35 @@ i.e:
 <vp-icon name="vue" />
 ```
 
-## Configurations
+## Advanced
 
-For advanced usage.
+If you are developing a __theme__ or a __plugin__ for VuePress, it's highly recommended that you have these options customed:
+
+``` js
+const { resolve } = require('path')
+
+module.exports = options => {
+  return {
+    plugins: [
+      ['@goy/svg-icons', {
+        svgsDir: resolve(__dirname, 'icons'),
+        componentName: 'FooBarIcon',
+        iconIdPrefix: 'foo_bar_icon_',
+        iconClassPrefix: 'foo-bar-icon-',
+        iconCommonClass: 'foo-bar-icon',
+      }]
+    ]
+  }
+}
+```
+
+Use icon in markdown:
+
+``` markdown
+<foo-bar-icon name="vue" />
+```
+
+## Configurations
 
 ``` js
 module.exports = {

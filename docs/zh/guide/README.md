@@ -1,6 +1,6 @@
 # 用户引导
 
-vuepress-plugin-svg-icons 是一款方便 VuePress 用户使用 __svg-sprite-icon__ 技术的插件。
+__vuepress-plugin-svg-icons__ 是一款方便 VuePress 用户使用 __svg-sprite-icon__ 技术的插件。
 
 ## 安装依赖
 
@@ -12,7 +12,7 @@ $ yarn add @goy/vuepress-plugin-svg-icons -D
 
 ## 简单使用
 
-> 查阅 [官方文档](https://v1.vuepress.vuejs.org/zh/plugin/using-a-plugin.html) 了解如何在 VuePress 中使用插件。
+> 阅读 [官方文档](https://v1.vuepress.vuejs.org/zh/plugin/using-a-plugin.html) 了解如何在 VuePress 中使用插件。
 
 编辑配置文件 `.vuepress/config.js`
 
@@ -44,9 +44,35 @@ module.exports = {
 <vp-icon name="vue" />
 ```
 
-## 配置详解
+## 高级用法
 
-高级应用：
+如果你正在为 VuePress 开发一款主题或者插件, 强烈建议你在使用本插件时配置做以下自定义配置：
+
+``` js
+const { resolve } = require('path')
+
+module.exports = options => {
+  return {
+    plugins: [
+      ['@goy/svg-icons', {
+        svgsDir: resolve(__dirname, 'icons'),
+        componentName: 'FooBarIcon',
+        iconIdPrefix: 'foo_bar_icon_',
+        iconClassPrefix: 'foo-bar-icon-',
+        iconCommonClass: 'foo-bar-icon',
+      }]
+    ]
+  }
+}
+```
+
+在 Markdown 中使用：
+
+``` markdown
+<foo-bar-icon name="vue" />
+```
+
+## 配置详解
 
 ``` js
 module.exports = {

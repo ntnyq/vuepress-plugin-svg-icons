@@ -17,9 +17,9 @@ $ npm install @goy/vuepress-plugin-svg-icons -D
 $ yarn add @goy/vuepress-plugin-svg-icons -D
 ```
 
-# Usage
+## Usage
 
-Add config to `.vuepress/config.js`:
+Add config to your `.vuepress/config.js`:
 
 ``` js
 module.exports = {
@@ -41,6 +41,34 @@ Just enjoy it!
 <vp-icon name="github" />
 
 <vp-icon color="#3eaf7c" name="vue" />
+```
+
+## Advanced
+
+If you are developing a __theme__ or a __plugin__ for VuePress, it's highly recommended that you have these options customed:
+
+``` js
+const { resolve } = require('path')
+
+module.exports = options => {
+  return {
+    plugins: [
+      ['@goy/svg-icons', {
+        svgsDir: resolve(__dirname, 'icons'),
+        componentName: 'FooBarIcon',
+        iconIdPrefix: 'foo_bar_icon_',
+        iconClassPrefix: 'foo-bar-icon-',
+        iconCommonClass: 'foo-bar-icon',
+      }]
+    ]
+  }
+}
+```
+
+Use icon in markdown:
+
+``` markdown
+<foo-bar-icon name="vue" />
 ```
 
 [Custom options detail](https://vp-icon.goyfe.com/guide)
