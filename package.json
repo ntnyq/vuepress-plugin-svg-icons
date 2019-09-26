@@ -1,6 +1,6 @@
 {
   "name": "@goy/vuepress-plugin-svg-icons",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "main": "lib/index.js",
   "scripts": {
     "dev": "vuepress dev docs",
