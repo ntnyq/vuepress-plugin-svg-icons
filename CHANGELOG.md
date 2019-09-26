@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.1.1](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v3.1.0...v3.1.1) (2019-09-26)
+
+
+### Bug Fixes
+
+* custom component name error when build ([daaad1c](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/daaad1c))
+
 ## [3.1.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v3.0.0...v3.1.0) (2019-09-12)
 
 
