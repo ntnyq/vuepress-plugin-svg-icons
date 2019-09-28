@@ -34,34 +34,34 @@ With some CSS style and wrapped in an element, your icons will be magical.
 
 ## Text list
 
-- <my-icon name="bai-yang" /> Aries
-- <my-icon name="chu-nv" /> Virgo
-- <my-icon name="jin-niu" /> Taurus
-- <my-icon name="ju-xie" /> Cancer
-- <my-icon name="mo-jie" /> Capricorn
-- <my-icon name="she-shou" /> Sagittarius
-- <my-icon name="shi-zi" /> Leo
-- <my-icon name="shuang-yu" /> Pisces
-- <my-icon name="shuang-zi" /> Gemini
-- <my-icon name="shui-ping" /> Aquarius
-- <my-icon name="tian-cheng" /> Libra
-- <my-icon name="tian-xie" /> Scorpio
+- <vp-icon name="bai-yang" /> Aries
+- <vp-icon name="chu-nv" /> Virgo
+- <vp-icon name="jin-niu" /> Taurus
+- <vp-icon name="ju-xie" /> Cancer
+- <vp-icon name="mo-jie" /> Capricorn
+- <vp-icon name="she-shou" /> Sagittarius
+- <vp-icon name="shi-zi" /> Leo
+- <vp-icon name="shuang-yu" /> Pisces
+- <vp-icon name="shuang-zi" /> Gemini
+- <vp-icon name="shui-ping" /> Aquarius
+- <vp-icon name="tian-cheng" /> Libra
+- <vp-icon name="tian-xie" /> Scorpio
 
 ## In paragraph
 
 <p>
- <my-icon name="bai-yang" /> Aries 
- <my-icon name="chu-nv" /> Virgo 
- <my-icon name="jin-niu" /> Taurus 
- <my-icon name="ju-xie" /> Cancer 
- <my-icon name="mo-jie" /> Capricorn 
- <my-icon name="she-shou" /> Sagittarius
+ <vp-icon name="bai-yang" /> Aries 
+ <vp-icon name="chu-nv" /> Virgo 
+ <vp-icon name="jin-niu" /> Taurus 
+ <vp-icon name="ju-xie" /> Cancer 
+ <vp-icon name="mo-jie" /> Capricorn 
+ <vp-icon name="she-shou" /> Sagittarius
 </p>
 <p>
- <my-icon name="shi-zi" /> Leo 
- <my-icon name="shuang-yu" /> Pisces 
- <my-icon name="shuang-zi" /> Gemini 
- <my-icon name="shui-ping" /> Aquarius 
- <my-icon name="tian-cheng" /> Libra 
- <my-icon name="tian-xie" /> Scorpio
+ <vp-icon name="shi-zi" /> Leo 
+ <vp-icon name="shuang-yu" /> Pisces 
+ <vp-icon name="shuang-zi" /> Gemini 
+ <vp-icon name="shui-ping" /> Aquarius 
+ <vp-icon name="tian-cheng" /> Libra 
+ <vp-icon name="tian-xie" /> Scorpio
 </p>
