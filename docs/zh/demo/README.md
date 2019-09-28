@@ -34,34 +34,34 @@ sidebar: false
 
 ## 文本
 
-- <my-icon name="bai-yang" /> 白羊座
-- <my-icon name="chu-nv" /> 处女座
-- <my-icon name="jin-niu" /> 金牛座
-- <my-icon name="ju-xie" /> 巨蟹座
-- <my-icon name="mo-jie" /> 摩羯座
-- <my-icon name="she-shou" /> 射手座
-- <my-icon name="shi-zi" /> 狮子座
-- <my-icon name="shuang-yu" /> 双鱼座
-- <my-icon name="shuang-zi" /> 双子座
-- <my-icon name="shui-ping" /> 水瓶座
-- <my-icon name="tian-cheng" /> 天秤座
-- <my-icon name="tian-xie" /> 天蝎座
+- <vp-icon name="bai-yang" /> 白羊座
+- <vp-icon name="chu-nv" /> 处女座
+- <vp-icon name="jin-niu" /> 金牛座
+- <vp-icon name="ju-xie" /> 巨蟹座
+- <vp-icon name="mo-jie" /> 摩羯座
+- <vp-icon name="she-shou" /> 射手座
+- <vp-icon name="shi-zi" /> 狮子座
+- <vp-icon name="shuang-yu" /> 双鱼座
+- <vp-icon name="shuang-zi" /> 双子座
+- <vp-icon name="shui-ping" /> 水瓶座
+- <vp-icon name="tian-cheng" /> 天秤座
+- <vp-icon name="tian-xie" /> 天蝎座
 
 ## 段落
 
 <p>
- <my-icon name="bai-yang" /> 白羊座 
- <my-icon name="chu-nv" /> 处女座 
- <my-icon name="jin-niu" /> 金牛座 
- <my-icon name="ju-xie" /> 巨蟹座 
- <my-icon name="mo-jie" /> 摩羯座 
- <my-icon name="she-shou" /> 射手座
+ <vp-icon name="bai-yang" /> 白羊座 
+ <vp-icon name="chu-nv" /> 处女座 
+ <vp-icon name="jin-niu" /> 金牛座 
+ <vp-icon name="ju-xie" /> 巨蟹座 
+ <vp-icon name="mo-jie" /> 摩羯座 
+ <vp-icon name="she-shou" /> 射手座
 </p>
 <p>
- <my-icon name="shi-zi" /> 狮子座 
- <my-icon name="shuang-yu" /> 双鱼座 
- <my-icon name="shuang-zi" /> 双子座 
- <my-icon name="shui-ping" /> 水瓶座 
- <my-icon name="tian-cheng" /> 天秤座 
- <my-icon name="tian-xie" /> 天蝎座
+ <vp-icon name="shi-zi" /> 狮子座 
+ <vp-icon name="shuang-yu" /> 双鱼座 
+ <vp-icon name="shuang-zi" /> 双子座 
+ <vp-icon name="shui-ping" /> 水瓶座 
+ <vp-icon name="tian-cheng" /> 天秤座 
+ <vp-icon name="tian-xie" /> 天蝎座
 </p>

@@ -11,10 +11,9 @@
           'is-round': round
         }"
       >
-        <my-icon
+        <vp-icon
           :name="icon.name"
           :color="`${ color || (bgc ? '#fff' : icon.color) }`"
-          gutter="0"
         />
       </li>
     </ul>

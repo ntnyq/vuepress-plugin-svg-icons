@@ -7,5 +7,5 @@ pageClass: site-home
 ---
 
 <div class="hero-icon">
-  <my-icon color="#3eaf7c" name="vue" />
+  <vp-icon color="#3eaf7c" name="vue" />
 </div>
