@@ -44,33 +44,8 @@ i.e:
 <vp-icon name="vue" />
 ```
 
-## Advanced
-
-If you are developing a __theme__ or a __plugin__ for VuePress, it's highly recommended that you have these options customed:
-
-``` js
-const { resolve } = require('path')
-
-module.exports = options => {
-  return {
-    plugins: [
-      ['@goy/svg-icons', {
-        svgsDir: resolve(__dirname, 'icons'),
-        componentName: 'FooBarIcon',
-        iconIdPrefix: 'foo_bar_icon_',
-        iconClassPrefix: 'foo-bar-icon-',
-        iconCommonClass: 'foo-bar-icon',
-      }]
-    ]
-  }
-}
-```
-
-Use icon in markdown:
-
-``` markdown
-<foo-bar-icon name="vue" />
-```
+<vp-icon name="github" color="purple" size="4em" />
+<vp-icon name="star" color="orange" size="4em" />
 
 ## Configurations
 
@@ -79,12 +54,6 @@ module.exports = {
   plugins: [
     ['@goy/svg-icons', {
       svgsDir: 'svgs',
-      componentName: 'SvgIcon',
-      iconIdPrefix: 'svg_icon_',
-      iconClassPrefix: 'svg-icon-',
-      iconCommonClass: 'svg-icon',
-      defaultColor: '#333',
-      defaultGutter: '0.1em'
     }]
   ]
 }
@@ -99,51 +68,34 @@ The path to your svg files directory.
 
 If a relative path is specified, it will be resolved based on `sourceDir`.
 
-### componentName
+## Component Props
 
-- __type:__ `string`
-- __default:__ `VpIcon`
+The __VpIcon__ component's props.
 
-Your custom component name to replace the default `VpIcon`.
+### color
 
-It's highly recommended to give a name in `Pascal` style.
+- __type__ `string`
+- __default__ `undefined`
 
-### iconIdPrefix
+Custom the icon color.
 
-- __type:__ `string`
-- __default:__ `vp_icon_`
+## Custom style
 
-Your custom id prefix for all svg symbols.
+By default, those variables are set to vuepress-plugin-svg-icons.
 
-### iconClassPrefix
+``` stylus
+// vuepress-plugin-svg-icons/lib/style.styl
 
-- __type:__ `string`
-- __default:__ `vp-icon-`
+$vp-icon-color ?= currentColor
+```
 
-Your custom class prefix for all svg element.
+If you want to override them, just set them in your `palette.styl`:
 
-### iconCommonClass
+``` stylus
+// .vuepress/styles/palette.styl
 
-- __type:__ `string`
-- __default:__ `vp-icon`
-
-Your custom class for all svg element.
-
-### defaultColor
-
-- __type:__ `string`
-- __default:__ `currentColor`
-
-Your custom color for all svg element if no color provided.
-
-### defaultGutter
-
-- __type:__ `string | number`
-- __default:__ 0
-
-Your custom marginLeft and marginRight for all svg element.
-
-If it's a number, the unit will be `px`.
+$vp-icon-color = red
+```
 
 ## CLI Command
 
