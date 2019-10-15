@@ -1,6 +1,6 @@
 {
   "name": "@goy/vuepress-plugin-svg-icons",
-  "version": "3.1.2",
+  "version": "4.0.0",
   "description": "SVG sprite icon plugin for VuePress",
   "keywords": [
     "icon",

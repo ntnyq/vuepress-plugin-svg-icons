@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v3.1.2...v4.0.0) (2019-10-15)
+
+
+### Features
+
+* make it simple ([386cd7e](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/386cd7e))
+* no longer support custom options ([d59df3d](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/d59df3d))
+
 ### [3.1.2](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v3.1.1...v3.1.2) (2019-09-26)
 
 
