@@ -9,3 +9,6 @@ yarn-error.log*
 
 # Editor
 .vscode
+
+# Test
+docs/.vuepress/plugins
