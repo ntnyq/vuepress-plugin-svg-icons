@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.1.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v4.0.0...v4.1.0) (2020-04-19)
+
+
+### Features
+
+* add log when svg-icons path does not exist ([41b8023](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/41b8023c890d93e3d12e92a364dc772650bd3340))
+
 ## [4.0.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v3.1.2...v4.0.0) (2019-10-15)
 
 
