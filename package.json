@@ -49,14 +49,14 @@
   "prettier": "prettier-config-goy",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.4.0",
-    "eslint-config-goy": "^0.2.2",
+    "eslint": "^7.6.0",
+    "eslint-config-goy": "^0.2.3",
     "eslint-plugin-vue": "^6.2.2",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "prettier-config-goy": "^1.1.0",
-    "vuepress": "^1.5.2"
+    "vuepress": "^1.5.3"
   },
   "peerDependencies": {
     "vuepress": "^1.0.0"
