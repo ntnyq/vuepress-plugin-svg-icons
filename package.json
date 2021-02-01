@@ -58,14 +58,14 @@
   ],
   "prettier": "@ntnyq/prettier-config",
   "devDependencies": {
-    "@ntnyq/eslint-config-vue": "^0.3.0",
-    "@ntnyq/prettier-config": "^0.2.0",
+    "@ntnyq/eslint-config-vue": "^0.3.1",
+    "@ntnyq/prettier-config": "^0.3.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.15.0",
-    "husky": "^4.3.5",
+    "eslint": "^7.19.0",
+    "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
-    "vuepress": "^1.7.1"
+    "vuepress": "^1.8.0"
   },
   "peerDependencies": {
     "vuepress": "^1.0.0"

@@ -5,5 +5,10 @@
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "[javascript]": {
     "editor.formatOnSave": false
-  }
+  },
+  "cSpell.words": [
+    "svgs",
+    "vssue",
+    "xlink"
+  ]
 }
