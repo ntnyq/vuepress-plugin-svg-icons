@@ -1,0 +1,26 @@
+name: Deploy to gh-pages
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+      - uses: pnpm/action-setup@v1.2.1
+        with:
+          version: 5.17.2
+          run_install: true
+      - run: pnpm run build
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
