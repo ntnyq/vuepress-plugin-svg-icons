@@ -48,7 +48,10 @@
   },
   "eslintConfig": {
     "root": true,
-    "extends": "@ntnyq/vue"
+    "extends": "@ntnyq/vue",
+    "parserOptions": {
+      "requireConfigFile": false
+    }
   },
   "eslintIgnore": [
     "!.*",
