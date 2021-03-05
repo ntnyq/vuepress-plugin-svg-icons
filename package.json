@@ -43,8 +43,8 @@
     "*.{yml,md,styl}": "prettier --write"
   },
   "dependencies": {
-    "svg-mixer": "^2.4.0",
-    "svgo": "^2.0.3"
+    "svg-mixer": "^2.3.14",
+    "svgo": "^2.2.0"
   },
   "eslintConfig": {
     "root": true,
@@ -58,13 +58,13 @@
   ],
   "prettier": "@ntnyq/prettier-config",
   "devDependencies": {
-    "@ntnyq/eslint-config-vue": "^0.3.1",
+    "@ntnyq/eslint-config-vue": "^0.4.0",
     "@ntnyq/prettier-config": "^0.3.0",
-    "eslint": "^7.19.0",
+    "eslint": "^7.21.0",
     "husky": "^4.3.8",
-    "lint-staged": "^10.5.3",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
-    "vuepress": "^1.8.0"
+    "vuepress": "^1.8.2"
   },
   "peerDependencies": {
     "vuepress": "^1.0.0"
