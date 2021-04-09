@@ -33,11 +33,6 @@
     "lint:fix": "eslint --fix --ext .js,.vue .",
     "svgo": "vuepress svgo docs"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{js,vue}": "eslint --fix",
     "*.{yml,md,styl}": "prettier --write"
