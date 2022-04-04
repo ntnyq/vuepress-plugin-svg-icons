@@ -5,7 +5,7 @@ module.exports = {
   description: 'Using SVG sprite icons in VuePress',
   dest: 'site',
   plugins: [
-    require('../../lib'),
+    `@goy/svg-icons`,
   ],
   themeConfig: {
     repo: 'ntnyq/vuepress-plugin-svg-icons',

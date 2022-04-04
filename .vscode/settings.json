@@ -1,15 +1,11 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.eslint.fixAll": true
-  },
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
   "cSpell.words": [
     "goyfe",
+    "pnpm",
+    "styl",
     "svgs",
     "vssue",
+    "vuepress",
     "xlink"
   ]
 }

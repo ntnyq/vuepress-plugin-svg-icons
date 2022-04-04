@@ -17,10 +17,11 @@ jobs:
       - uses: actions/setup-node@v2
       - uses: pnpm/action-setup@v2
         with:
-          version: 6.0.0
+          version: latest
           run_install: true
       - run: pnpm run build
+      - run: pnpm run build:docs
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          publish_dir: ./docs-dist
