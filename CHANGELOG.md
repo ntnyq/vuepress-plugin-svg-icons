@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.3.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v4.2.3...v4.3.0) (2022-04-08)
+
+### Features
+
+-   upgrade svgo ([0c585ca](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/0c585cac2745a7f2489022bcbabde8332e19849c))
+
+### Bug Fixes
+
+-   eslint parser error ([03cae9d](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/03cae9d117c504d949ea111da5931d8d748e3632))
+
 ### [4.2.3](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v4.2.2...v4.2.3) (2021-02-01)
 
 -   No user notable changes
