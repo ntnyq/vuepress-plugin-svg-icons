@@ -37,7 +37,8 @@
     "dev:docs": "pnpm -C docs run dev",
     "build:docs": "npm -C docs run build",
     "prepare": "husky install",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc -p tsconfig.build.json --noEmit"
   },
   "lint-staged": {
     "*.{yml,md}": "prettier --write"
