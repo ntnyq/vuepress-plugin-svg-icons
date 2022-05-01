@@ -27,7 +27,7 @@ $ yarn add @goy/vuepress-plugin-svg-icons -D
 For `.vuepress/config.js`:
 
 ```js
-const svgIconPlugin = require('@goy/vuepress-plugin-svg-icons')
+const { svgIconPlugin } = require('@goy/vuepress-plugin-svg-icons')
 
 module.exports = {
     plugins: [svgIconPlugin()],
