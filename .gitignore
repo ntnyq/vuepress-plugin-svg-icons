@@ -6,8 +6,15 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Docs dist
-/docs-dist
+# Typescript build info
+*.tsbuildinfo
+
+# VuePress dev
+.temp
+.cache
 
 # Lib dist
 /lib
+
+# Docs dist
+/docs-dist

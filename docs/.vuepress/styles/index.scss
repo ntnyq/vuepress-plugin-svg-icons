@@ -1,0 +1,29 @@
+.site-home {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header.hero {
+    order: 2;
+  }
+
+  .action-button {
+    margin: 1em auto;
+  }
+
+  .hero-icon {
+    order: 1;
+    line-height: 1;
+    font-size: 180px;
+    text-align: center;
+
+    @media screen and (min-width: 419px) {
+      font-size: 240px;
+    }
+  }
+
+  .footer {
+    order: 3;
+  }
+}

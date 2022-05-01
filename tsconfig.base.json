@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "composite": true,
+    "strict": true,
+    "sourceMap": false,
+    "declaration": true,
+    "lib": [
+      "DOM",
+      "ES2020"
+    ],
+    "target": "ES2018",
+    "noImplicitAny": true,
+    "noEmitOnError": true,
+    "moduleResolution": "node"
+  }
+}
