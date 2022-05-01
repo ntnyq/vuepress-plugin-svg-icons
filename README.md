@@ -8,6 +8,10 @@
 
 :book: [Live Demo and Docs](https://vp-icon.goyfe.com)
 
+⚠️ This branch is for [VuePress v2](https://v2.vuepress.vuejs.org)
+
+Check [vuepress-v1](https://github.com/ntnyq/vuepress-plugin-svg-icons/tree/vuepress-v1) for VuePress v1 support.
+
 ## Install
 
 ```bash
