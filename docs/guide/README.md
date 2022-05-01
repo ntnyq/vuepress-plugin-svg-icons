@@ -12,14 +12,27 @@ $ yarn add @goy/vuepress-plugin-svg-icons -D
 
 ## Usage
 
-> See [Official Docs](https://v1.vuepress.vuejs.org/zh/plugin/using-a-plugin.html) about how to use plugin in VuePress.
+> See [Official Docs](https://v2.vuepress.vuejs.org/guide/plugin.html#plugin) about how to use plugin in VuePress.
 
-Edit your `.vuepress/config.js`:
+For `.vuepress/config.js`:
 
 ```js
+const svgIconPlugin = require('@goy/vuepress-plugin-svg-icons')
+
 module.exports = {
-    plugins: ['@goy/svg-icons'],
+    plugins: [svgIconPlugin()],
 }
+```
+
+For `.vuepress/config.ts`
+
+```ts
+import { defineUserConfig } from '@vuepress/cli'
+import { svgIconPlugin } from '@goy/vuepress-plugin-svg-icons'
+
+export default defineUserConfig({
+    plugins: [svgIconPlugin()],
+})
 ```
 
 Create a folder named `icons` in your document `sourceDir` and put all your SVG files in it.
@@ -31,7 +44,7 @@ The plugin provide a **global component** named **`VpIcon`**.
 Just enjoy it!
 
 ::: warning
-A `name` attribute must be provided to specific the SVG file name you gonna use.
+A `name` prop must be provided to specific the SVG file name you gonna use.
 
 And the file must exists wherever you put your SVG files in.
 :::
@@ -45,20 +58,7 @@ i.e:
 <vp-icon name="github" color="purple" size="4em" />
 <vp-icon name="star" color="orange" size="4em" />
 
-## Configurations
-
-```js
-module.exports = {
-    plugins: [
-        [
-            '@goy/svg-icons',
-            {
-                svgsDir: 'svgs',
-            },
-        ],
-    ],
-}
-```
+## Options
 
 ### svgsDir
 
@@ -68,6 +68,13 @@ module.exports = {
 The path to your svg files directory.
 
 If a relative path is specified, it will be resolved based on `sourceDir`.
+
+### componentName
+
+-   **type:** `string`
+-   **default:** `VpIcon`
+
+Custom the svg icon component name if needed.
 
 ## Component Props
 
@@ -80,42 +87,21 @@ The **VpIcon** component's props.
 
 Custom the icon color.
 
+### size
+
+-   **type** `string`
+-   **default** `undefined`
+
+Custom the icon size.
+
 ## Custom style
 
 By default, those variables are set to vuepress-plugin-svg-icons.
 
-```stylus
-// vuepress-plugin-svg-icons/lib/style.styl
-
-$vp-icon-color ?= currentColor
-```
-
-If you want to override them, just set them in your `palette.styl`:
-
-```stylus
-// .vuepress/styles/palette.styl
-
-$vp-icon-color = red
-```
-
-## CLI Command
-
-vuepress-svg-sprite-icons has **[SVGO](https://github.com/svg/svgo)** intergrated and supplied a CLI command `vuepress svgo [docsDir]` to help you optimize your svg files.
-
-Add `"svgo": "vuepress svgo docs"` to your `package.json` file's **scripts** field and run it then the plugin will do the rest.
-
-```json
-{
-    "scripts": {
-        "dev": "vuepress dev docs",
-        "build": "vuepress build docs",
-        "svgo": "vuepress svgo docs"
-    }
+```css
+:root {
+    --vp-icon-color: currentcolor;
 }
 ```
 
-## Icon source
-
-1. **[Iconfont](https://www.iconfont.cn/collections/index)** - strongly recommended
-2. From web designer or create svg file yourself using (`Sketch`, `AI`)。
-3. Etc.
+Override it in your stylesheet if needed.
