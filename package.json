@@ -7,7 +7,7 @@
     "vuepress",
     "svg-sprite-icon",
     "svg-sprite",
-    "iconfont"
+    "icon"
   ],
   "homepage": "https://vp-icon.goyfe.com",
   "bugs": {
@@ -25,15 +25,16 @@
   "files": [
     "lib"
   ],
-  "main": "lib/index.js",
+  "types": "lib/node/index.d.ts",
+  "main": "lib/node/index.js",
   "scripts": {
-    "clean": "rimraf lib",
-    "copy": "copyfiles -a -u 1 -V src/*.{styl,js} lib",
+    "clean": "rimraf lib *.tsbuildinfo",
+    "copy": "copyfiles -a -u 1 -V src/**/*.{css,js} lib",
     "dev": "run-s clean dev:lib",
     "build": "run-s clean build:lib copy",
-    "dev:lib": "tsc-watch --onSuccess \"npm run copy\"",
-    "build:lib": "tsc --build",
-    "dev:docs": "npm -C docs run dev",
+    "dev:lib": "tsc-watch -b tsconfig.build.json --onSuccess \"npm run copy\"",
+    "build:lib": "tsc -b tsconfig.build.json",
+    "dev:docs": "pnpm -C docs run dev",
     "build:docs": "npm -C docs run build",
     "prepare": "husky install",
     "prepublishOnly": "npm run build"
@@ -48,20 +49,22 @@
   "prettier": "@ntnyq/prettier-config",
   "devDependencies": {
     "@ntnyq/prettier-config": "^0.3.1",
+    "@vuepress/bundler-vite": "^2.0.0-beta.41",
     "copyfiles": "^2.4.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.4.1",
     "npm-run-all": "^4.1.5",
+    "pnpm": "^6.32.11",
     "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
     "tsc-watch": "^5.0.3",
     "typescript": "^4.6.4",
-    "vue": "^2.6.14",
-    "vuepress": "^1.9.7",
-    "vuepress-types": "^0.9.4"
+    "vite": "^2.9.6",
+    "vue": "^3.2.33",
+    "vuepress": "^2.0.0-beta.41"
   },
   "peerDependencies": {
-    "vuepress": "^1.0.0"
+    "vuepress": "^2.0.0-beta.41"
   },
   "publishConfig": {
     "access": "public"
@@ -69,7 +72,7 @@
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
-        "css-loader"
+        "postcss"
       ]
     }
   }

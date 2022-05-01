@@ -2,7 +2,7 @@
   "name": "docs",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vuepress dev . --no-clear-screen --debug",
+    "dev": "vuepress dev . --debug",
     "build": "vuepress build . --dest ../docs-dist",
     "svgo": "vuepress svgo ."
   },

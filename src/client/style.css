@@ -1,0 +1,11 @@
+:root {
+  --vp-icon-color: currentcolor;
+}
+
+.vp-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: var(--vp-icon-color);
+  overflow: hidden;
+}

@@ -4,6 +4,8 @@
     "pnpm",
     "styl",
     "svgs",
+    "tsbuildinfo",
+    "vite",
     "vssue",
     "vuepress",
     "xlink"
