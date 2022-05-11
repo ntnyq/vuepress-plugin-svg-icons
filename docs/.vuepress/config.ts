@@ -25,7 +25,7 @@ export default defineUserConfig({
       { text: 'Guide', link: '/guide/' },
       {
         text: 'Changelog',
-        link: `https://github.com/ntnyq/vuepress-plugin-svg-icons/blob/master/CHANGELOG.md`,
+        link: `https://github.com/ntnyq/vuepress-plugin-svg-icons/blob/main/CHANGELOG.md`,
       },
     ],
     sidebar: [`/guide/`],
