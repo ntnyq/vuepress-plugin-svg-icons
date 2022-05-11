@@ -2,17 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [5.0.1](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v4.3.0...v5.0.1) (2022-05-01)
-
-
-### Features
-
-* vuepress 2 ([3397511](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/339751146e66a673e9b4e109947111863b912e7c))
-
+### [5.0.2](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v5.0.1...v5.0.2) (2022-05-11)
 
 ### Bug Fixes
 
-* usage ([7261ead](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/7261ead6e02d7246043c5e29e96fd7a6312a5ba6))
+-   remove svgo ([5fa273b](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/5fa273bd31248ccd3132aeb6e6eab07e48dad881))
+
+### [5.0.1](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v4.3.0...v5.0.1) (2022-05-01)
+
+### Features
+
+-   vuepress 2 ([3397511](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/339751146e66a673e9b4e109947111863b912e7c))
+
+### Bug Fixes
+
+-   usage ([7261ead](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/7261ead6e02d7246043c5e29e96fd7a6312a5ba6))
 
 ## [5.0.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v4.3.0...v5.0.0) (2022-05-01)
 
