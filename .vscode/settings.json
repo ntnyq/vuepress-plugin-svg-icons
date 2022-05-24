@@ -9,5 +9,14 @@
     "vssue",
     "vuepress",
     "xlink"
-  ]
+  ],
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  }
 }

@@ -1,12 +1,12 @@
 {
   "name": "docs",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "vuepress dev . --debug",
     "build": "vuepress build . --dest ../docs-dist",
     "svgo": "vuepress svgo ."
   },
-  "private": true,
   "devDependencies": {
     "@goy/vuepress-plugin-svg-icons": "workspace:*"
   }

@@ -13,38 +13,28 @@ on:
       - .husky
 
 jobs:
-  typecheck:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v2
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          run_install: true
-
-      - name: Set node
-        uses: actions/setup-node@v3
-        with:
-          cache: pnpm
-
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run lint
       - run: pnpm run typecheck
 
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      - uses: pnpm/action-setup@v2
-        with:
-          run_install: true
-
       - uses: actions/setup-node@v3
-        with:
-          cache: pnpm
+      - uses: pnpm/action-setup@v2
 
+      - run: pnpm install --frozen-lockfile
       - run: pnpm run build
       - run: pnpm run build:docs
+
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

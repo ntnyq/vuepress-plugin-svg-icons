@@ -5,7 +5,7 @@ import { SVGIconData } from '@vuepress/plugin-svg-icons/temp'
 export const Sprites = defineComponent({
   name: `VpIconSprites`,
 
-  setup() {
+  setup () {
     return () =>
       h(`div`, {
         style: `display: none;`,

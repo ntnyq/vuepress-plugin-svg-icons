@@ -14,7 +14,7 @@ interface SvgSpritesOptions {
  * @returns svg symbol id
  */
 const generateSymbolId = (file: string, prefix: string) =>
-  prefix + path.basename(file, '.svg')
+  prefix + path.basename(file, `.svg`)
 
 /**
  * Config to generate svg sprite data
@@ -34,7 +34,7 @@ const spriteConfig = {
  *
  * @returns svg sprite data
  */
-export async function genSvgSprites(
+export async function genSvgSprites (
   path: string,
   options: SvgSpritesOptions = {},
 ) {

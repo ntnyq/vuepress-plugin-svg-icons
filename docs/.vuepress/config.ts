@@ -21,10 +21,10 @@ export default defineUserConfig({
     editLinkText: `Edit this page on GitHub`,
     lastUpdatedText: `Last Updated at`,
     navbar: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
+      { text: `Home`, link: `/` },
+      { text: `Guide`, link: `/guide/` },
       {
-        text: 'Changelog',
+        text: `Changelog`,
         link: `https://github.com/ntnyq/vuepress-plugin-svg-icons/blob/main/CHANGELOG.md`,
       },
     ],
