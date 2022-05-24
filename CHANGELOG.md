@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.1.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v5.0.1...v5.1.0) (2022-05-24)
+
+
+### Features
+
+* bump vuepress-next ([35b2e3b](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/35b2e3bb4bfef237bddc0ecc8d1d60922b006b46))
+
+
+### Bug Fixes
+
+* remove svgo ([5fa273b](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/5fa273bd31248ccd3132aeb6e6eab07e48dad881))
+
 ### [5.0.2](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v5.0.1...v5.0.2) (2022-05-11)
 
 ### Bug Fixes
