@@ -2,15 +2,11 @@ import { type VNode, defineComponent, h } from 'vue'
 import { type SvgIconPropsOptions } from '../../shared'
 
 function renderIcon (props: SvgIconPropsOptions): VNode {
-  return h(
-    `svg`,
-    {
-      'aria-hidden': `true`,
-      class: [`vp-icon`, `vp-icon-${props.name}`],
-      style: { fill: props.color, fontSize: props.size },
-    },
-    [h(`use`, { 'xlink:href': `#${props.prefix + props.name}` })],
-  )
+  return h(`svg`, {
+    'aria-hidden': `true`,
+    class: [`vp-icon`, `vp-icon-${props.name}`],
+    style: { fill: props.color, fontSize: props.size },
+  }, [h(`use`, { 'xlink:href': `#${props.prefix + props.name}` })])
 }
 
 export const Icon = defineComponent({
