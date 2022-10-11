@@ -1,2 +1,2 @@
-export * from './Icon'
-export * from './Sprites'
+export * from './Icon.js'
+export * from './Sprites.js'

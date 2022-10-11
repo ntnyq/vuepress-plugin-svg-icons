@@ -1,18 +1,21 @@
 {
   "compilerOptions": {
-    "skipLibCheck": true,
+    "module": "ESNext",
+    "target": "ES2020",
+    "moduleResolution": "NodeNext",
     "esModuleInterop": true,
-    "composite": true,
-    "strict": true,
     "sourceMap": false,
+    "strict": true,
     "declaration": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    "types": [
+      "node"
+    ],
     "lib": [
       "DOM",
       "ES2020"
-    ],
-    "target": "ES2018",
-    "noImplicitAny": true,
-    "noEmitOnError": true,
-    "moduleResolution": "node"
+    ]
   }
 }

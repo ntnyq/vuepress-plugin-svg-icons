@@ -16,7 +16,7 @@ export default defineUserConfig({
     docsRepo: `ntnyq/vuepress-plugin-svg-icons`,
     docsDir: `docs`,
     docsBranch: `main`,
-    editLinks: true,
+    editLink: true,
     lastUpdated: true,
     editLinkText: `Edit this page on GitHub`,
     lastUpdatedText: `Last Updated at`,

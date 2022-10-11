@@ -1,5 +1,5 @@
 import { type VNode, defineComponent, h } from 'vue'
-import { type SvgIconPropsOptions } from '../../shared'
+import { type SvgIconPropsOptions } from '../../shared/index.js'
 
 function renderIcon (props: SvgIconPropsOptions): VNode {
   return h(`svg`, {

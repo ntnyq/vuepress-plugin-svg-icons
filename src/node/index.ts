@@ -1,6 +1,6 @@
-import { svgIconPlugin } from './svgIconPlugin'
+import { svgIconPlugin } from './svgIconPlugin.js'
 
-export * from '../shared'
-export * from './svgIconPlugin'
+export * from '../shared/index.js'
+export * from './svgIconPlugin.js'
 
 export default svgIconPlugin

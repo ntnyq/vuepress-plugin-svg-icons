@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vuepress dev . --debug",
-    "build": "vuepress build . --dest ../docs-dist",
-    "svgo": "vuepress svgo ."
+    "build": "vuepress build . --dest ../docs-dist"
   },
   "devDependencies": {
     "@goy/vuepress-plugin-svg-icons": "workspace:*"

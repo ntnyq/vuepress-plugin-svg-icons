@@ -1,7 +1,10 @@
-import path from 'path'
-import fs from 'fs'
-import { type Plugin } from '@vuepress/core'
-import { genSvgSprites } from './utils'
+import { existsSync } from 'node:fs'
+import { URL, fileURLToPath } from 'node:url'
+import { isAbsolute, resolve } from 'pathe'
+import type { Plugin } from 'vuepress'
+import { genSvgSprites } from './utils.js'
+
+const __dirname = fileURLToPath(new URL(`.`, import.meta.url))
 
 export interface SvgIconPluginOptions {
   svgsDir?: string
@@ -18,7 +21,7 @@ export const svgIconPlugin = ({
 }: SvgIconPluginOptions = {}): Plugin => ({
   name: `@goy/svg-icons`,
 
-  clientConfigFile: path.resolve(__dirname, `../client/config.js`),
+  clientConfigFile: resolve(__dirname, `../client/config.js`),
 
   alias: app => ({
     '@vuepress/plugin-svg-icons/temp': app.dir.temp(`svg-icon/svg-icon`),
@@ -31,17 +34,17 @@ export const svgIconPlugin = ({
   },
 
   async onPrepared (app) {
-    const svgIconsDir = path.isAbsolute(svgsDir)
+    const svgIconsDir = isAbsolute(svgsDir)
       ? svgsDir
       : app.dir.source(svgsDir)
 
-    if (!fs.existsSync(svgIconsDir)) {
+    if (!existsSync(svgIconsDir)) {
       console.error(`@goy/svg-icons: Can not find folder ${svgIconsDir}`)
     }
 
     const svgIconsData = await genSvgSprites(svgIconsDir, { prefix: iconIdPrefix })
-
     const SVGIconContent = `export const SVGIconData = '${svgIconsData}'`
+
     app.writeTemp(`svg-icon/svg-icon.js`, SVGIconContent)
   },
 })
