@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.2.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v5.1.0...v5.2.0) (2022-10-11)
+
+
+### Features
+
+* migrate to pure ESM ([3cc52ca](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/3cc52ca6f5361c5504ec190fd72e1bd9b9a935da))
+
 ## [5.1.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v5.0.1...v5.1.0) (2022-05-24)
 
 
