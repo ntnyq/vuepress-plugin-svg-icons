@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.2.1](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v5.2.0...v5.2.1) (2022-12-19)
+
+
+### Bug Fixes
+
+* remove moot dep pathe ([c3b80d6](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/c3b80d6ad5d43ef8b5186fdd490f30c6d250eedf))
+
 ## [5.2.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v5.1.0...v5.2.0) (2022-10-11)
 
 
