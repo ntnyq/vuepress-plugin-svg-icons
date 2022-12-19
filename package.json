@@ -2,7 +2,7 @@
   "name": "@goy/vuepress-plugin-svg-icons",
   "type": "module",
   "version": "5.2.0",
-  "packageManager": "pnpm@7.13.3",
+  "packageManager": "pnpm@7.18.2",
   "description": "SVG sprite icon plugin for VuePress",
   "keywords": [
     "vuepress-plugin",
@@ -29,58 +29,50 @@
   "exports": {
     ".": "./lib/node/index.js",
     "./client": "./lib/client/index.js",
-    "./package.json": "./package.json"
+    "./*": "./*"
   },
   "files": [
     "lib"
   ],
   "scripts": {
+    "build": "run-s clean build:lib copy",
+    "build:docs": "pnpm --filter=docs run build",
+    "build:lib": "tsc",
     "clean": "rimraf lib *.tsbuildinfo",
     "copy": "copyfiles -a -u 1 -V src/**/*.{css,js} lib",
     "dev": "run-s clean dev:lib",
-    "build": "run-s clean build:lib copy",
-    "dev:lib": "tsc-watch -b tsconfig.build.json --onSuccess \"npm run copy\"",
-    "build:lib": "tsc -b tsconfig.build.json",
     "dev:docs": "pnpm --filter=docs run dev",
-    "build:docs": "pnpm --filter=docs run build",
+    "dev:lib": "tsc-watch --onSuccess \"npm run copy\"",
     "lint": "eslint .",
     "prepare": "husky install",
     "prepublishOnly": "run-s clean build typecheck lint",
-    "typecheck": "tsc -p tsconfig.build.json --noEmit"
+    "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
     "vuepress": "^2.0.0-beta.51"
   },
   "dependencies": {
-    "pathe": "^0.3.9",
     "svg-mixer": "^2.3.14"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^1.0.4",
+    "@ntnyq/eslint-config": "^1.2.1",
     "@vuepress/client": "^2.0.0-beta.51",
     "copyfiles": "^2.4.1",
-    "eslint": "^8.25.0",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
+    "eslint": "^8.30.0",
+    "husky": "^8.0.2",
+    "nano-staged": "^0.8.0",
     "npm-run-all": "^4.1.5",
-    "pnpm": "^7.13.4",
+    "pnpm": "^7.18.2",
     "rimraf": "^3.0.2",
-    "tsc-watch": "^5.0.3",
-    "typescript": "^4.8.4",
-    "vite": "^3.1.7",
-    "vue": "^3.2.40",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.2",
+    "vue": "^3.2.45",
     "vuepress": "^2.0.0-beta.51"
   },
-  "lint-staged": {
+  "nano-staged": {
     "*.{js,ts,yaml,yml,md,json}": "eslint --fix"
   },
-  "eslintConfig": {
-    "root": true,
-    "extends": "@ntnyq"
-  },
-  "eslintIgnore": [
-    "lib"
-  ],
   "publishConfig": {
     "access": "public"
   }

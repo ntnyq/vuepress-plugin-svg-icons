@@ -1,6 +1,6 @@
 import { existsSync } from 'node:fs'
 import { URL, fileURLToPath } from 'node:url'
-import { isAbsolute, resolve } from 'pathe'
+import { isAbsolute, resolve } from 'node:path'
 import type { Plugin } from 'vuepress'
 import { genSvgSprites } from './utils.js'
 

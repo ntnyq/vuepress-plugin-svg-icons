@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vuepress dev . --debug",
-    "build": "vuepress build . --dest ../docs-dist"
+    "build": "vuepress build . --dest ../docs-dist",
+    "dev": "vuepress dev . --debug"
   },
   "devDependencies": {
     "@goy/vuepress-plugin-svg-icons": "workspace:*"
