@@ -50,8 +50,8 @@ i.e:
 
 ### svgsDir
 
--   **type:** `string`
--   **default:** `icons`
+- **type:** `string`
+- **default:** `icons`
 
 The path to your svg files directory.
 
@@ -59,8 +59,8 @@ If a relative path is specified, it will be resolved based on `sourceDir`.
 
 ### componentName
 
--   **type:** `string`
--   **default:** `VpIcon`
+- **type:** `string`
+- **default:** `VpIcon`
 
 Custom the svg icon component name if needed.
 
@@ -70,15 +70,15 @@ The **VpIcon** component's props.
 
 ### color
 
--   **type** `string`
--   **default** `undefined`
+- **type** `string`
+- **default** `undefined`
 
 Custom the icon color.
 
 ### size
 
--   **type** `string`
--   **default** `undefined`
+- **type** `string`
+- **default** `undefined`
 
 Custom the icon size.
 
@@ -88,7 +88,7 @@ By default, those variables are set to vuepress-plugin-svg-icons.
 
 ```css
 :root {
-    --vp-icon-color: currentcolor;
+  --vp-icon-color: currentcolor;
 }
 ```
 

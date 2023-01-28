@@ -1,20 +1,8 @@
 .DS_Store
 node_modules
-
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Typescript build info
+*.log*
+*.local
 *.tsbuildinfo
-
-# VuePress dev
 .temp
 .cache
-
-# Lib dist
-/lib
-
-# Docs dist
-/docs-dist
+dist

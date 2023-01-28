@@ -11,9 +11,6 @@
     "vuepress",
     "xlink"
   ],
-  "[markdown]": {
-    "editor.formatOnSave": false
-  },
   "[javascript]": {
     "editor.formatOnSave": false
   },

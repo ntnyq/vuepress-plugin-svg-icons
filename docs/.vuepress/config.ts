@@ -7,9 +7,9 @@ export default defineUserConfig({
 
   description: `Using SVG sprite icons in VuePress`,
 
-  dest: `site`,
-
-  plugins: [svgIconPlugin()],
+  plugins: [
+    svgIconPlugin(),
+  ],
 
   theme: defaultTheme({
     repo: `ntnyq/vuepress-plugin-svg-icons`,
@@ -28,6 +28,8 @@ export default defineUserConfig({
         link: `https://github.com/ntnyq/vuepress-plugin-svg-icons/blob/main/CHANGELOG.md`,
       },
     ],
-    sidebar: [`/guide/`],
+    sidebar: [
+      `/guide/`,
+    ],
   }),
 })
