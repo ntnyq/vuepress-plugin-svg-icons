@@ -15,11 +15,13 @@ $ yarn add @goy/vuepress-plugin-svg-icons -D
 > See [Official Docs](https://v2.vuepress.vuejs.org/guide/plugin.html#plugin) about how to use plugin in VuePress.
 
 ```js
-import { defineUserConfig } from '@vuepress/cli'
+import { defineUserConfig } from 'vuepress'
 import { svgIconPlugin } from '@goy/vuepress-plugin-svg-icons'
 
 export default defineUserConfig({
-  plugins: [svgIconPlugin()],
+  plugins: [
+    svgIconPlugin(),
+  ],
 })
 ```
 
