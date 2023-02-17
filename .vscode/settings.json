@@ -1,5 +1,21 @@
 {
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "json5"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "cSpell.words": [
+    "dbaeumer",
+    "esbenp",
+    "pathe",
     "pnpm",
     "svgs",
     "tsbuildinfo",
@@ -7,10 +23,5 @@
     "vuepress",
     "xlink"
   ],
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "[typescript]": {
-    "editor.formatOnSave": false
-  }
+  "cSpell.allowCompoundWords": true
 }

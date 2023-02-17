@@ -1,35 +1,30 @@
-import { defineUserConfig } from '@vuepress/cli'
-import { defaultTheme } from '@vuepress/theme-default'
+import { defaultTheme, defineUserConfig } from 'vuepress'
 import { svgIconPlugin } from '@goy/vuepress-plugin-svg-icons'
 
 export default defineUserConfig({
-  title: `vuepress-plugin-svg-icons`,
+  title: 'vuepress-plugin-svg-icons',
 
-  description: `Using SVG sprite icons in VuePress`,
+  description: 'Using SVG sprite icons in VuePress',
 
-  plugins: [
-    svgIconPlugin(),
-  ],
+  plugins: [svgIconPlugin()],
 
   theme: defaultTheme({
-    repo: `ntnyq/vuepress-plugin-svg-icons`,
-    docsRepo: `ntnyq/vuepress-plugin-svg-icons`,
-    docsDir: `docs`,
-    docsBranch: `main`,
+    repo: 'ntnyq/vuepress-plugin-svg-icons',
+    docsRepo: 'ntnyq/vuepress-plugin-svg-icons',
+    docsDir: 'docs',
+    docsBranch: 'main',
     editLink: true,
     lastUpdated: true,
-    editLinkText: `Edit this page on GitHub`,
-    lastUpdatedText: `Last Updated at`,
+    editLinkText: 'Edit this page on GitHub',
+    lastUpdatedText: 'Last Updated at',
     navbar: [
-      { text: `Home`, link: `/` },
-      { text: `Guide`, link: `/guide/` },
+      { text: 'Home', link: '/' },
+      { text: 'Guide', link: '/guide/' },
       {
-        text: `Changelog`,
-        link: `https://github.com/ntnyq/vuepress-plugin-svg-icons/blob/main/CHANGELOG.md`,
+        text: 'Changelog',
+        link: 'https://github.com/ntnyq/vuepress-plugin-svg-icons/blob/main/CHANGELOG.md',
       },
     ],
-    sidebar: [
-      `/guide/`,
-    ],
+    sidebar: ['/guide/'],
   }),
 })

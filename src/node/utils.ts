@@ -13,17 +13,16 @@ interface SvgSpritesOptions {
  *
  * @returns svg symbol id
  */
-const generateSymbolId = (file: string, prefix: string) =>
-  prefix + path.basename(file, `.svg`)
+const generateSymbolId = (file: string, prefix: string) => prefix + path.basename(file, '.svg')
 
 /**
  * Config to generate svg sprite data
  */
 const spriteConfig = {
-  filename: ``,
+  filename: '',
   usages: false,
   spacing: 0,
-  attrs: { 'arial-hidden': `true` },
+  attrs: { 'arial-hidden': 'true' },
 }
 
 /**
@@ -34,10 +33,7 @@ const spriteConfig = {
  *
  * @returns svg sprite data
  */
-export async function genSvgSprites (
-  path: string,
-  options: SvgSpritesOptions = {},
-) {
+export async function genSvgSprites(path: string, options: SvgSpritesOptions = {}) {
   // @ts-expect-error svgmixer is not typed properly
   const result = await svgMixer(`${path}/*.svg`, {
     generateSymbolId: path => generateSymbolId(path, options.prefix!),

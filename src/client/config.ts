@@ -12,11 +12,13 @@ const defaultPropsOptions = __SVG_ICON_DEFAULT_PROPS_OPTIONS__
 
 export default defineClientConfig({
   enhance: ({ app }) => {
-    app.component(__SVG_ICON_COMPONENT_NAME__, props => h(Icon, {
-      ...defaultPropsOptions,
-      ...props,
-      prefix: __SVG_ICON_ID_PREFIX__,
-    }))
+    app.component(__SVG_ICON_COMPONENT_NAME__, props =>
+      h(Icon, {
+        ...defaultPropsOptions,
+        ...props,
+        prefix: __SVG_ICON_ID_PREFIX__,
+      }),
+    )
   },
 
   rootComponents: [Sprites],
