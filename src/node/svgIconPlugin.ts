@@ -24,7 +24,7 @@ export const svgIconPlugin = ({
   clientConfigFile: resolve(__dirname, '../client/config.js'),
 
   alias: app => ({
-    '@vuepress/plugin-svg-icons/temp': app.dir.temp('svg-icon/svg-icon'),
+    '@vuepress/plugin-svg-icons/data': app.dir.temp('svg-icons/data'),
   }),
 
   define: {
@@ -40,11 +40,7 @@ export const svgIconPlugin = ({
       console.error(`@goy/svg-icons: Can not find folder ${svgIconsDir}`)
     }
 
-    const svgIconsData = await genSvgSprites(svgIconsDir, {
-      prefix: iconIdPrefix,
-    })
-    const SVGIconContent = `export const SVGIconData = '${svgIconsData}'`
-
-    app.writeTemp('svg-icon/svg-icon.js', SVGIconContent)
+    const svgIconsData = await genSvgSprites(svgIconsDir, { prefix: iconIdPrefix })
+    app.writeTemp('svg-icons/data.js', `export const SVGIconsData = '${svgIconsData}'`)
   },
 })
