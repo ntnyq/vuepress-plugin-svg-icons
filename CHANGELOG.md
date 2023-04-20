@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.3.3](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v5.3.2...v5.3.3) (2023-04-20)
+
+
+### Bug Fixes
+
+* **deps:** bump vuepress to beta-61 ([c9a3c9e](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/c9a3c9e6e20d2d50ac1adb8552cc2f1c11139146))
+* **deps:** remove moot deps ([263c6c6](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/263c6c6367bf654c8746c41ff18264bc1332cb91))
+
 ### [5.3.2](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v5.3.1...v5.3.2) (2023-02-17)
 
 ### Bug Fixes
