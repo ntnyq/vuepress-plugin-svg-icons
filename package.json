@@ -2,7 +2,7 @@
   "name": "@goy/vuepress-plugin-svg-icons",
   "type": "module",
   "version": "5.3.2",
-  "packageManager": "pnpm@7.27.0",
+  "packageManager": "pnpm@8.3.1",
   "description": "SVG sprite icon plugin for VuePress",
   "keywords": [
     "vuepress-plugin",
@@ -21,14 +21,14 @@
     "url": "https://github.com/ntnyq/vuepress-plugin-svg-icons/issues"
   },
   "repository": "ntnyq/vuepress-plugin-svg-icons",
-  "main": "./dist/node/index.js",
-  "module": "./dist/node/index.js",
-  "types": "./dist/node/index.d.ts",
   "exports": {
     ".": "./dist/node/index.js",
     "./client": "./dist/client/index.js",
     "./*": "./*"
   },
+  "main": "./dist/node/index.js",
+  "module": "./dist/node/index.js",
+  "types": "./dist/node/index.d.ts",
   "files": [
     "dist"
   ],
@@ -47,9 +47,9 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "vuepress": "2.0.0-beta.60",
-    "vuepress-vite": "2.0.0-beta.60",
-    "vuepress-webpack": "2.0.0-beta.60"
+    "vuepress": "2.0.0-beta.61",
+    "vuepress-vite": "2.0.0-beta.61",
+    "vuepress-webpack": "2.0.0-beta.61"
   },
   "peerDependenciesMeta": {
     "vuepress": {
@@ -63,35 +63,30 @@
     }
   },
   "dependencies": {
-    "@vuepress/client": "2.0.0-beta.60",
+    "@vuepress/client": "2.0.0-beta.61",
     "svg-mixer": "^2.3.14",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "vuepress-vite": "2.0.0-beta.61",
+    "vuepress-webpack": "2.0.0-beta.61"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^1.3.1",
-    "@ntnyq/prettier-config": "^1.3.1",
-    "@vuepress/client": "2.0.0-beta.60",
+    "@ntnyq/eslint-config": "^1.7.0",
+    "@ntnyq/prettier-config": "^1.7.0",
     "copyfiles": "^2.4.1",
-    "eslint": "^8.34.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-yml": "^1.5.0",
+    "eslint": "^8.38.0",
     "husky": "^8.0.3",
     "nano-staged": "^0.8.0",
     "npm-run-all": "^4.1.5",
-    "pnpm": "^7.27.0",
-    "prettier": "^2.8.4",
-    "rimraf": "^4.1.2",
+    "pnpm": "^8.3.1",
+    "prettier": "^2.8.7",
+    "rimraf": "^5.0.0",
     "tsc-watch": "^6.0.0",
-    "typescript": "^4.9.5",
-    "vuepress": "2.0.0-beta.60"
+    "typescript": "^5.0.4",
+    "vuepress": "2.0.0-beta.61"
   },
   "prettier": "@ntnyq/prettier-config",
   "nano-staged": {
-    "*.{js,ts,yaml,yml,md,json}": [
-      "eslint --fix",
-      "prettier --write"
-    ]
+    "*.{js,ts,mjs,yaml,yml,md,json}": "eslint --fix"
   },
   "publishConfig": {
     "access": "public"

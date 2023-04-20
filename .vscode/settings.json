@@ -1,17 +1,19 @@
 {
+  "prettier.enable": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.validate": [
+    "vue",
+    "html",
+    "json",
+    "jsonc",
+    "json5",
+    "markdown",
     "javascript",
     "typescript",
     "javascriptreact",
-    "typescriptreact",
-    "vue",
-    "html",
-    "markdown",
-    "json",
-    "jsonc",
-    "json5"
+    "typescriptreact"
   ],
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "cSpell.words": [
     "dbaeumer",
     "esbenp",

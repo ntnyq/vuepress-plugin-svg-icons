@@ -5,9 +5,15 @@
 ## Install
 
 ```bash
-$ npm install @goy/vuepress-plugin-svg-icons -D
-# or
-$ yarn add @goy/vuepress-plugin-svg-icons -D
+npm i @goy/vuepress-plugin-svg-icons -D
+```
+
+```bash
+yarn add @goy/vuepress-plugin-svg-icons -D
+```
+
+```bash
+pnpm add @goy/vuepress-plugin-svg-icons -D
 ```
 
 ## Usage

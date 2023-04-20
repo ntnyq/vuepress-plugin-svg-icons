@@ -1,8 +1,8 @@
 import { existsSync } from 'node:fs'
 import { URL, fileURLToPath } from 'node:url'
 import { isAbsolute, resolve } from 'node:path'
-import type { Plugin } from 'vuepress'
 import { genSvgSprites } from './utils.js'
+import type { Plugin } from 'vuepress'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 
