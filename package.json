@@ -2,7 +2,7 @@
   "name": "@goy/vuepress-plugin-svg-icons",
   "type": "module",
   "version": "5.3.3",
-  "packageManager": "pnpm@8.3.1",
+  "packageManager": "pnpm@8.6.9",
   "description": "SVG sprite icon plugin for VuePress",
   "keywords": [
     "vuepress-plugin",
@@ -47,9 +47,9 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "vuepress": "2.0.0-beta.61",
-    "vuepress-vite": "2.0.0-beta.61",
-    "vuepress-webpack": "2.0.0-beta.61"
+    "vuepress": "2.0.0-beta.66",
+    "vuepress-vite": "2.0.0-beta.66",
+    "vuepress-webpack": "2.0.0-beta.66"
   },
   "peerDependenciesMeta": {
     "vuepress": {
@@ -63,24 +63,31 @@
     }
   },
   "dependencies": {
-    "@vuepress/client": "2.0.0-beta.61",
+    "@vuepress/client": "2.0.0-beta.66",
     "svg-mixer": "^2.3.14",
-    "vue": "^3.2.47"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^1.7.0",
-    "@ntnyq/prettier-config": "^1.7.0",
+    "@ntnyq/eslint-config": "^1.12.0",
+    "@ntnyq/prettier-config": "^1.12.0",
     "copyfiles": "^2.4.1",
-    "eslint": "^8.38.0",
+    "eslint": "^8.45.0",
     "husky": "^8.0.3",
     "nano-staged": "^0.8.0",
     "npm-run-all": "^4.1.5",
-    "pnpm": "^8.3.1",
-    "prettier": "^2.8.7",
-    "rimraf": "^5.0.0",
-    "tsc-watch": "^6.0.0",
-    "typescript": "^5.0.4",
-    "vuepress": "2.0.0-beta.61"
+    "pnpm": "^8.6.9",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.1",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.1.6",
+    "vuepress": "2.0.0-beta.66"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "webpack"
+      ]
+    }
   },
   "prettier": "@ntnyq/prettier-config",
   "nano-staged": {
