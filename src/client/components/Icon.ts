@@ -1,18 +1,4 @@
 import { defineComponent, h } from 'vue'
-import type { VNode } from 'vue'
-import type { SvgIconPropsOptions } from '../../shared/index.js'
-
-function renderIcon(props: SvgIconPropsOptions): VNode {
-  return h(
-    'svg',
-    {
-      'aria-hidden': 'true',
-      class: ['vp-icon', `vp-icon-${props.name}`],
-      style: { fill: props.color, fontSize: props.size },
-    },
-    [h('use', { 'xlink:href': `#${props.prefix + props.name}` })],
-  )
-}
 
 export const Icon = defineComponent({
   name: 'VpIcon',
@@ -37,6 +23,15 @@ export const Icon = defineComponent({
   },
 
   setup(props) {
-    return () => renderIcon(props)
+    return () =>
+      h(
+        'svg',
+        {
+          'aria-hidden': 'true',
+          class: ['vp-icon', `vp-icon-${props.name}`],
+          style: { fill: props.color, fontSize: props.size },
+        },
+        [h('use', { 'xlink:href': `#${props.prefix + props.name}` })],
+      )
   },
 })

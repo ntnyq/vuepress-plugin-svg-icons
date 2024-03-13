@@ -1,7 +1,8 @@
 import './style.css'
-import { defineClientConfig } from '@vuepress/client'
+import { defineClientConfig } from 'vuepress/client'
 import { h } from 'vue'
 import { Icon, Sprites } from './components/index.js'
+import type { ClientConfig } from 'vuepress/client'
 import type { SvgIconPropsOptions } from '../shared/index.js'
 
 declare const __SVG_ICON_ID_PREFIX__: string
@@ -12,7 +13,7 @@ const defaultPropsOptions = __SVG_ICON_DEFAULT_PROPS_OPTIONS__
 
 export default defineClientConfig({
   enhance: ({ app }) => {
-    app.component(__SVG_ICON_COMPONENT_NAME__, props =>
+    app.component(__SVG_ICON_COMPONENT_NAME__, (props: SvgIconPropsOptions) =>
       h(Icon, {
         ...defaultPropsOptions,
         ...props,
@@ -22,4 +23,4 @@ export default defineClientConfig({
   },
 
   rootComponents: [Sprites],
-})
+}) satisfies ClientConfig

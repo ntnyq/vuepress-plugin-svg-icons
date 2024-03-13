@@ -1,10 +1,14 @@
-import { defaultTheme, defineUserConfig } from 'vuepress'
+import { defineUserConfig } from 'vuepress'
+import { viteBundler } from '@vuepress/bundler-vite'
+import { defaultTheme } from '@vuepress/theme-default'
 import { svgIconPlugin } from '@goy/vuepress-plugin-svg-icons'
 
 export default defineUserConfig({
   title: 'vuepress-plugin-svg-icons',
 
   description: 'Using SVG sprite icons in VuePress',
+
+  bundler: viteBundler(),
 
   plugins: [svgIconPlugin()],
 
