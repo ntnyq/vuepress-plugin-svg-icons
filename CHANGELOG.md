@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.5.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v5.4.0...v5.5.0) (2024-03-13)
+
+
+### Features
+
+* bump vuepress to rc-8 ([37e56ee](https://github.com/ntnyq/vuepress-plugin-svg-icons/commit/37e56ee327264fe3959c80cac45c2bd450b80016))
+
 ## [5.4.0](https://github.com/ntnyq/vuepress-plugin-svg-icons/compare/v5.3.3...v5.4.0) (2023-07-19)
 
 
