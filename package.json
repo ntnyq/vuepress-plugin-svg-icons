@@ -47,10 +47,9 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "vuepress": "2.0.0-rc.8"
+    "vuepress": "^2.0.0-rc.14"
   },
   "dependencies": {
-    "@vuepress/client": "2.0.0-rc.8",
     "svg-mixer": "^2.3.14",
     "vue": "^3.4.31"
   },
@@ -67,14 +66,7 @@
     "rimraf": "^5.0.7",
     "tsc-watch": "^6.2.0",
     "typescript": "^5.5.2",
-    "vuepress": "2.0.0-rc.8"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "webpack"
-      ]
-    }
+    "vuepress": "2.0.0-rc.14"
   },
   "prettier": "@ntnyq/prettier-config",
   "nano-staged": {
