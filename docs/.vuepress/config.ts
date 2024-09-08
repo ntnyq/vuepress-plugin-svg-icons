@@ -1,6 +1,7 @@
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defaultTheme } from '@vuepress/theme-default'
+import { shikiPlugin } from '@vuepress/plugin-shiki'
 import { svgIconPlugin } from '@goy/vuepress-plugin-svg-icons'
 
 export default defineUserConfig({
@@ -10,7 +11,29 @@ export default defineUserConfig({
 
   bundler: viteBundler(),
 
-  plugins: [svgIconPlugin()],
+  plugins: [
+    shikiPlugin({
+      langs: [
+        'js',
+        'ts',
+        'md',
+        'jsx',
+        'tsx',
+        'html',
+        'vue',
+        'css',
+        'scss',
+        'json',
+        'jsonc',
+        'yml',
+        'yaml',
+        'bash',
+        'shell',
+      ],
+      theme: 'one-dark-pro',
+    }),
+    svgIconPlugin(),
+  ],
 
   theme: defaultTheme({
     repo: 'ntnyq/vuepress-plugin-svg-icons',
@@ -19,8 +42,6 @@ export default defineUserConfig({
     docsBranch: 'main',
     editLink: true,
     lastUpdated: true,
-    editLinkText: 'Edit this page on GitHub',
-    lastUpdatedText: 'Last Updated at',
     navbar: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },

@@ -33,8 +33,8 @@ const spriteConfig = {
  *
  * @returns svg sprite data
  */
-export async function genSvgSprites(path: string, options: SvgSpritesOptions = {}) {
-  // @ts-expect-error svgmixer is not typed properly
+export async function getSVGIconsData(path: string, options: SvgSpritesOptions = {}) {
+  // @ts-expect-error svg-mixer is not typed properly
   const result = await svgMixer(`${path}/*.svg`, {
     generateSymbolId: path => generateSymbolId(path, options.prefix!),
     spriteConfig,
