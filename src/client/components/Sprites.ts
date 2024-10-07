@@ -1,5 +1,5 @@
-import { defineComponent, h } from 'vue'
 import { SVGIconsData } from '@vuepress/plugin-svg-icons/data'
+import { defineComponent, h } from 'vue'
 
 export const Sprites = defineComponent({
   name: 'VpIconSprites',

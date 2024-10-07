@@ -1,8 +1,8 @@
-import { defineUserConfig } from 'vuepress'
-import { viteBundler } from '@vuepress/bundler-vite'
-import { defaultTheme } from '@vuepress/theme-default'
-import { shikiPlugin } from '@vuepress/plugin-shiki'
 import { svgIconPlugin } from '@goy/vuepress-plugin-svg-icons'
+import { viteBundler } from '@vuepress/bundler-vite'
+import { shikiPlugin } from '@vuepress/plugin-shiki'
+import { defaultTheme } from '@vuepress/theme-default'
+import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
   title: 'vuepress-plugin-svg-icons',

@@ -2,7 +2,9 @@
 node_modules
 *.log*
 *.local
+
 *.tsbuildinfo
 .temp
 .cache
+
 dist
