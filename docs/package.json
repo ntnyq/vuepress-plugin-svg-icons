@@ -10,8 +10,8 @@
   "devDependencies": {
     "@goy/vuepress-plugin-svg-icons": "workspace:*",
     "@vuepress/bundler-vite": "^2.0.0-rc.18",
-    "@vuepress/plugin-shiki": "^2.0.0-rc.56",
-    "@vuepress/theme-default": "^2.0.0-rc.56",
-    "sass-embedded": "^1.80.3"
+    "@vuepress/plugin-shiki": "^2.0.0-rc.57",
+    "@vuepress/theme-default": "^2.0.0-rc.58",
+    "sass-embedded": "^1.80.4"
   }
 }
