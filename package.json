@@ -2,7 +2,7 @@
   "name": "@goy/vuepress-plugin-svg-icons",
   "type": "module",
   "version": "5.6.0",
-  "packageManager": "pnpm@9.12.2",
+  "packageManager": "pnpm@9.13.2",
   "description": "SVG sprite icon plugin for VuePress",
   "keywords": [
     "vuepress-plugin",
@@ -17,10 +17,10 @@
     "email": "ntnyq13@gmail.com"
   },
   "homepage": "https://vp-icon.ntnyq.com",
+  "repository": "ntnyq/vuepress-plugin-svg-icons",
   "bugs": {
     "url": "https://github.com/ntnyq/vuepress-plugin-svg-icons/issues"
   },
-  "repository": "ntnyq/vuepress-plugin-svg-icons",
   "exports": {
     ".": "./dist/node/index.js",
     "./client": "./dist/client/index.js",
@@ -32,6 +32,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "run-s clean build:lib copy",
     "build:docs": "pnpm -C docs run build",
@@ -54,26 +57,23 @@
     "vue": "^3.5.12"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^3.1.1",
+    "@ntnyq/eslint-config": "^3.2.2",
     "@ntnyq/prettier-config": "^1.21.3",
-    "@types/node": "^22.8.1",
+    "@types/node": "^22.9.0",
     "copyfiles": "^2.4.1",
-    "eslint": "^9.13.0",
+    "eslint": "^9.14.0",
     "husky": "^9.1.6",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^7.0.1",
-    "pnpm": "^9.12.2",
+    "pnpm": "^9.13.2",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",
-    "tsc-watch": "^6.2.0",
+    "tsc-watch": "^6.2.1",
     "typescript": "^5.6.3",
     "vuepress": "^2.0.0-rc.18"
   },
   "prettier": "@ntnyq/prettier-config",
   "nano-staged": {
     "*.{js,ts,cjs,mjs,vue,yaml,yml,md,json}": "eslint --fix"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

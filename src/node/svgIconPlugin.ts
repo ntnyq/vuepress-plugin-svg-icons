@@ -1,14 +1,38 @@
 import { fs, getDirname, path } from 'vuepress/utils'
 import { getSVGIconsData } from './utils.js'
 import type { Plugin } from 'vuepress'
+import type { SvgIconPropsOptions } from '../shared/index.js'
 
 const __dirname = getDirname(import.meta.url)
 
 export interface SvgIconPluginOptions {
+  /**
+   * svg files directory based on source dir
+   *
+   * @default `icons`
+   */
   svgsDir?: string
+
+  /**
+   * icon id prefix
+   *
+   * @default `vp_icon_`
+   */
   iconIdPrefix?: string
+
+  /**
+   * icon component name
+   *
+   * @default `VpIcon`
+   */
   componentName?: string
-  defaultPropsOptions?: Record<string, any>
+
+  /**
+   * default props for icon component
+   *
+   * @default {}
+   */
+  defaultPropsOptions?: SvgIconPropsOptions
 }
 
 export const svgIconPlugin = (options: SvgIconPluginOptions = {}): Plugin => {

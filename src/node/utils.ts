@@ -2,7 +2,10 @@ import path from 'node:path'
 import svgMixer from 'svg-mixer'
 
 interface SvgSpritesOptions {
-  prefix?: string
+  /**
+   * Svg symbol's id prefix
+   */
+  prefix: string
 }
 
 /**
@@ -16,16 +19,6 @@ interface SvgSpritesOptions {
 const generateSymbolId = (file: string, prefix: string) => prefix + path.basename(file, '.svg')
 
 /**
- * Config to generate svg sprite data
- */
-const spriteConfig = {
-  filename: '',
-  usages: false,
-  spacing: 0,
-  attrs: { 'arial-hidden': 'true' },
-}
-
-/**
  * Generate svg sprite data
  *
  * @param path svgs directory
@@ -33,11 +26,16 @@ const spriteConfig = {
  *
  * @returns svg sprite data
  */
-export async function getSVGIconsData(path: string, options: SvgSpritesOptions = {}) {
+export async function getSVGIconsData(path: string, options: SvgSpritesOptions) {
   // @ts-expect-error svg-mixer is not typed properly
   const result = await svgMixer(`${path}/*.svg`, {
-    generateSymbolId: path => generateSymbolId(path, options.prefix!),
-    spriteConfig,
+    generateSymbolId: path => generateSymbolId(path, options.prefix),
+    spriteConfig: {
+      filename: '',
+      usages: false,
+      spacing: 0,
+      attrs: { 'arial-hidden': 'true' },
+    },
   })
 
   return result.content
