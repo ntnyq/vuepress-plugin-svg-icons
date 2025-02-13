@@ -18,12 +18,14 @@ export type IconPropsWithoutPrefix = Omit<IconProps, 'prefix'>
 
 export default defineClientConfig({
   enhance: ({ app }) => {
-    app.component(__SVG_ICON_COMPONENT_NAME__, (props: IconPropsWithoutPrefix) =>
-      h(Icon, {
-        ...defaultPropsOptions,
-        ...props,
-        prefix: __SVG_ICON_ID_PREFIX__,
-      }),
+    app.component(
+      __SVG_ICON_COMPONENT_NAME__,
+      (props: IconPropsWithoutPrefix) =>
+        h(Icon, {
+          ...defaultPropsOptions,
+          ...props,
+          prefix: __SVG_ICON_ID_PREFIX__,
+        }),
     )
   },
 

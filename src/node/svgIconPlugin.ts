@@ -59,14 +59,22 @@ export const svgIconPlugin = (options: SvgIconPluginOptions = {}): Plugin => {
     },
 
     async onPrepared(app) {
-      const svgIconsDir = path.isAbsolute(svgsDir) ? svgsDir : app.dir.source(svgsDir)
+      const svgIconsDir = path.isAbsolute(svgsDir)
+        ? svgsDir
+        : app.dir.source(svgsDir)
 
       if (!fs.existsSync(svgIconsDir)) {
         console.error(`@goy/svg-icons: Can not find folder ${svgIconsDir}`)
       }
 
-      const svgIconsData = await getSVGIconsData(svgIconsDir, { prefix: iconIdPrefix })
-      app.writeTemp('svg-icons/data.js', `export const SVGIconsData = '${svgIconsData}'`)
+      const svgIconsData = await getSVGIconsData(svgIconsDir, {
+        prefix: iconIdPrefix,
+      })
+
+      app.writeTemp(
+        'svg-icons/data.js',
+        `export const SVGIconsData = \`${svgIconsData}\``,
+      )
     },
   }
 }

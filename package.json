@@ -2,14 +2,14 @@
   "name": "@goy/vuepress-plugin-svg-icons",
   "type": "module",
   "version": "5.6.1",
-  "packageManager": "pnpm@9.13.2",
+  "packageManager": "pnpm@10.3.0",
   "description": "SVG sprite icon plugin for VuePress",
   "keywords": [
-    "vuepress-plugin",
-    "vuepress",
-    "svg-sprite-icon",
+    "icon",
     "svg-sprite",
-    "icon"
+    "svg-sprite-icon",
+    "vuepress",
+    "vuepress-plugin"
   ],
   "license": "MIT",
   "author": {
@@ -22,10 +22,10 @@
     "url": "https://github.com/ntnyq/vuepress-plugin-svg-icons/issues"
   },
   "exports": {
+    "./package.json": "./package.json",
     ".": "./dist/node/index.js",
     "./client": "./dist/client/index.js",
-    "./client/*": "./dist/client/*",
-    "./package.json": "./package.json"
+    "./client/*": "./dist/client/*"
   },
   "main": "./dist/node/index.js",
   "types": "./dist/node/index.d.ts",
@@ -37,13 +37,12 @@
   },
   "scripts": {
     "build": "run-s clean build:lib copy",
-    "build:docs": "pnpm -C docs run build",
     "build:lib": "tsc",
-    "clean": "rimraf dist *.tsbuildinfo",
+    "clean": "premove dist",
     "copy": "copyfiles -a -u 1 -V src/**/*.{css,js} dist",
-    "dev": "run-s dev:lib",
-    "dev:docs": "pnpm -C docs run dev",
-    "dev:lib": "tsc-watch --onSuccess \"npm run copy\"",
+    "dev": "tsc-watch --onSuccess \"npm run copy\"",
+    "docs:build": "pnpm -C docs run build",
+    "docs:dev": "pnpm -C docs run dev",
     "lint": "eslint .",
     "prepare": "husky",
     "prepublishOnly": "run-s build typecheck lint",
@@ -54,26 +53,25 @@
   },
   "dependencies": {
     "svg-mixer": "^2.3.14",
-    "vue": "^3.5.12"
+    "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^3.2.2",
-    "@ntnyq/prettier-config": "^1.21.3",
-    "@types/node": "^22.9.0",
+    "@ntnyq/eslint-config": "^4.0.0-beta.4",
+    "@ntnyq/prettier-config": "^2.0.0-beta.2",
+    "@types/node": "^22.13.2",
     "copyfiles": "^2.4.1",
-    "eslint": "^9.14.0",
-    "husky": "^9.1.6",
+    "eslint": "^9.20.1",
+    "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
-    "npm-run-all2": "^7.0.1",
-    "pnpm": "^9.13.2",
-    "prettier": "^3.3.3",
-    "rimraf": "^6.0.1",
+    "npm-run-all2": "^7.0.2",
+    "premove": "^4.0.0",
+    "prettier": "^3.5.1",
     "tsc-watch": "^6.2.1",
-    "typescript": "^5.6.3",
-    "vuepress": "^2.0.0-rc.18"
+    "typescript": "^5.7.3",
+    "vuepress": "^2.0.0-rc.19"
   },
-  "prettier": "@ntnyq/prettier-config",
   "nano-staged": {
-    "*.{js,ts,cjs,mjs,vue,yaml,yml,md,json}": "eslint --fix"
+    "*.{js,ts,cjs,mjs,vue,yaml,yml,md,json,svg}": "eslint --fix",
+    "*.{css,scss,html}": "prettier -uw"
   }
 }

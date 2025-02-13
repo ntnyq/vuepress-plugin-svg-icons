@@ -37,7 +37,7 @@ export const Icon = defineComponent({
           class: ['vp-icon', `vp-icon-${props.name}`],
           style: { fill: props.color, fontSize: props.size },
         },
-        [h('use', { 'xlink:href': `#${props.prefix + props.name}` })],
+        h('use', { 'xlink:href': `#${props.prefix + props.name}` }),
       )
   },
 })
