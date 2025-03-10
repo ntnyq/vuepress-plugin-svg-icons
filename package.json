@@ -70,13 +70,8 @@
     "typescript": "^5.8.2",
     "vuepress": "^2.0.0-rc.20"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
-  },
   "nano-staged": {
-    "*.{js,ts,cjs,mjs,vue,yaml,yml,md,json,svg}": "eslint --fix",
+    "*.{js,ts,cjs,mjs,vue,md,svg,yml,yaml,json}": "eslint --fix",
     "*.{css,scss,html}": "prettier -uw"
   }
 }
