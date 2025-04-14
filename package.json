@@ -68,7 +68,7 @@
     "prettier": "^3.5.3",
     "tsc-watch": "^6.2.1",
     "typescript": "^5.8.3",
-    "vuepress": "^2.0.0-rc.20"
+    "vuepress": "^2.0.0-rc.21"
   },
   "nano-staged": {
     "*.{js,ts,cjs,mjs,vue,md,svg,yml,yaml,json}": "eslint --fix",
