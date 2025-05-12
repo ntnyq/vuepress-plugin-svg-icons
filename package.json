@@ -56,9 +56,9 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^4.1.0",
+    "@ntnyq/eslint-config": "^4.2.0",
     "@ntnyq/prettier-config": "^2.0.0",
-    "@types/node": "^22.15.3",
+    "@types/node": "^22.15.17",
     "copyfiles": "^2.4.1",
     "eslint": "^9.26.0",
     "husky": "^9.1.7",
@@ -68,7 +68,7 @@
     "prettier": "^3.5.3",
     "tsc-watch": "^6.2.1",
     "typescript": "^5.8.3",
-    "vuepress": "^2.0.0-rc.22"
+    "vuepress": "^2.0.0-rc.23"
   },
   "nano-staged": {
     "*.{js,ts,cjs,mjs,vue,md,svg,yml,yaml,json}": "eslint --fix",
