@@ -66,7 +66,7 @@
     "npm-run-all2": "^8.0.4",
     "premove": "^4.0.0",
     "prettier": "^3.5.3",
-    "tsc-watch": "^6.3.1",
+    "tsc-watch": "^7.0.0",
     "typescript": "^5.8.3",
     "vuepress": "^2.0.0-rc.23"
   },
