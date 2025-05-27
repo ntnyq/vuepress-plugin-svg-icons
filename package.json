@@ -53,7 +53,7 @@
   },
   "dependencies": {
     "svg-mixer": "^2.3.14",
-    "vue": "^3.5.14"
+    "vue": "^3.5.15"
   },
   "devDependencies": {
     "@ntnyq/eslint-config": "^4.3.0",
