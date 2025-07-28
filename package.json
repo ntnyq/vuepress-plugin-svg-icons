@@ -53,14 +53,14 @@
   },
   "dependencies": {
     "svg-mixer": "^2.3.14",
-    "vue": "^3.5.17"
+    "vue": "^3.5.18"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^5.1.0",
+    "@ntnyq/eslint-config": "^5.2.0",
     "@ntnyq/prettier-config": "^3.0.1",
     "@types/node": "^22.16.5",
     "copyfiles": "^2.4.1",
-    "eslint": "^9.31.0",
+    "eslint": "^9.32.0",
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^8.0.4",
