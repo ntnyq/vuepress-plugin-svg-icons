@@ -53,14 +53,14 @@
   },
   "dependencies": {
     "svg-mixer": "^2.3.14",
-    "vue": "^3.5.18"
+    "vue": "^3.5.20"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^5.3.1",
+    "@ntnyq/eslint-config": "^5.4.1",
     "@ntnyq/prettier-config": "^3.0.1",
-    "@types/node": "^22.17.2",
+    "@types/node": "^22.18.0",
     "copyfiles": "^2.4.1",
-    "eslint": "^9.33.0",
+    "eslint": "^9.34.0",
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^8.0.4",
@@ -68,7 +68,7 @@
     "prettier": "^3.6.2",
     "tsc-watch": "^7.1.1",
     "typescript": "^5.9.2",
-    "vuepress": "^2.0.0-rc.24"
+    "vuepress": "^2.0.0-rc.25"
   },
   "nano-staged": {
     "*.{js,ts,cjs,mjs,vue,md,svg,yml,yaml,json}": "eslint --fix",
