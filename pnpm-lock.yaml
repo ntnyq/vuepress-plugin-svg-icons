@@ -25,7 +25,7 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1
       '@types/node':
-        specifier: ^22.18.8
+        specifier: ^22.18.10
         version: 22.18.10
       copyfiles:
         specifier: ^2.4.1
