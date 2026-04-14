@@ -23,7 +23,7 @@
     "typescriptreact"
   ],
   // required a .js extension for typescript import
-  "typescript.preferences.importModuleSpecifierEnding": "js",
+  "js/ts.preferences.importModuleSpecifierEnding": "js",
   "cSpell.words": [
     "dbaeumer",
     "esbenp",
