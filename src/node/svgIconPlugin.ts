@@ -1,7 +1,7 @@
 import { fs, getDirname, path } from 'vuepress/utils'
-import { getSVGIconsData } from './utils.js'
+import { getSVGIconsData } from './utils'
 import type { Plugin } from 'vuepress'
-import type { SvgIconPropsOptions } from '../shared/index.js'
+import type { SvgIconPropsOptions } from '../shared'
 
 const __dirname = getDirname(import.meta.url)
 
