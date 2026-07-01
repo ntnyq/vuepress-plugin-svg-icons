@@ -2,7 +2,7 @@
   "name": "@goy/vuepress-plugin-svg-icons",
   "type": "module",
   "version": "5.6.2",
-  "packageManager": "pnpm@10.34.4",
+  "packageManager": "pnpm@11.13.1",
   "description": "SVG sprite icon plugin for VuePress",
   "keywords": [
     "icon",
@@ -36,37 +36,32 @@
     "access": "public"
   },
   "scripts": {
-    "build": "run-s clean build:lib copy",
-    "build:lib": "tsc",
-    "clean": "premove dist",
-    "copy": "copyfiles -a -u 1 -V src/**/*.{css,js} dist",
-    "dev": "tsc-watch --onSuccess \"npm run copy\"",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
     "docs:build": "pnpm -C docs run build",
     "docs:dev": "pnpm -C docs run dev",
     "lint": "eslint",
     "prepare": "husky",
-    "prepublishOnly": "run-s build typecheck lint",
+    "prepublishOnly": "pnpm run build",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "vuepress": "^2.0.0-rc.15"
+    "vuepress": "^2.0.0-rc.30"
   },
   "dependencies": {
     "svg-mixer": "^2.3.14",
-    "vue": "^3.5.38"
+    "vue": "^3.5.40"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^6.1.5",
-    "@ntnyq/prettier-config": "^3.0.1",
-    "@types/node": "^25.9.4",
-    "copyfiles": "^2.4.1",
-    "eslint": "^10.5.0",
+    "@ntnyq/eslint-config": "^7.0.0-beta.12",
+    "@ntnyq/prettier-config": "^3.1.0",
+    "@types/node": "^26.1.1",
+    "eslint": "^10.7.0",
     "husky": "^9.1.7",
     "nano-staged": "^1.0.2",
     "npm-run-all2": "^9.0.2",
-    "premove": "^4.0.0",
-    "prettier": "^3.8.4",
-    "tsc-watch": "^7.2.0",
+    "prettier": "^3.9.5",
+    "tsdown": "^0.22.9",
     "typescript": "^6.0.3",
     "vuepress": "^2.0.0-rc.30"
   },

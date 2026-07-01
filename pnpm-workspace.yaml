@@ -1,10 +1,14 @@
 packages:
-  - .
   - docs
 
 overrides:
   esbuild: ^0.28.1
-onlyBuiltDependencies:
-  - '@parcel/watcher'
-  - esbuild
-  - unrs-resolver
+
+allowBuilds:
+  '@parcel/watcher': true
+  esbuild: true
+  unrs-resolver: true
+
+ignoreWorkspaceRootCheck: true
+minimumReleaseAge: 0
+packageManagerStrict: false
