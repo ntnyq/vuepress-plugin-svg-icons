@@ -53,20 +53,20 @@
   },
   "dependencies": {
     "svg-mixer": "^2.3.14",
-    "vue": "^3.5.38"
+    "vue": "^3.5.39"
   },
   "devDependencies": {
     "@ntnyq/eslint-config": "^6.1.5",
-    "@ntnyq/prettier-config": "^3.0.1",
+    "@ntnyq/prettier-config": "^3.1.0",
     "@types/node": "^25.9.4",
     "copyfiles": "^2.4.1",
-    "eslint": "^10.5.0",
+    "eslint": "^10.6.0",
     "husky": "^9.1.7",
     "nano-staged": "^1.0.2",
     "npm-run-all2": "^9.0.2",
     "premove": "^4.0.0",
-    "prettier": "^3.8.4",
-    "tsc-watch": "^7.2.0",
+    "prettier": "^3.9.1",
+    "tsc-watch": "^7.2.1",
     "typescript": "^6.0.3",
     "vuepress": "^2.0.0-rc.30"
   },
