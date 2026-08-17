@@ -2,7 +2,7 @@
   "name": "@goy/vuepress-plugin-svg-icons",
   "type": "module",
   "version": "5.6.2",
-  "packageManager": "pnpm@11.20.0",
+  "packageManager": "pnpm@11.21.0",
   "description": "SVG sprite icon plugin for VuePress",
   "keywords": [
     "icon",
@@ -50,13 +50,13 @@
   },
   "dependencies": {
     "svg-mixer": "^2.3.14",
-    "vue": "^3.5.40"
+    "vue": "^3.5.41"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^7.0.0-beta.14",
+    "@ntnyq/eslint-config": "^7.0.0-beta.15",
     "@ntnyq/prettier-config": "^3.1.0",
-    "@types/node": "^26.1.2",
-    "eslint": "^10.8.0",
+    "@types/node": "^26.2.0",
+    "eslint": "^10.8.1",
     "husky": "^9.1.7",
     "nano-staged": "^1.0.2",
     "npm-run-all2": "^9.0.3",
