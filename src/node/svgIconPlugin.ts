@@ -48,9 +48,11 @@ export const svgIconPlugin = (options: SvgIconPluginOptions = {}): Plugin => {
 
     clientConfigFile: path.resolve(__dirname, '../client/config.js'),
 
-    alias: app => ({
-      '@vuepress/plugin-svg-icons/data': app.dir.temp('svg-icons/data'),
-    }),
+    alias(app) {
+      return {
+        '@vuepress/plugin-svg-icons/data': app.dir.temp('svg-icons/data'),
+      }
+    },
 
     define: {
       __SVG_ICON_ID_PREFIX__: iconIdPrefix,
