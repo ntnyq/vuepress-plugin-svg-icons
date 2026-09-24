@@ -17,7 +17,7 @@ const defaultPropsOptions = __SVG_ICON_DEFAULT_PROPS_OPTIONS__
 export type IconPropsWithoutPrefix = Omit<IconProps, 'prefix'>
 
 export default defineClientConfig({
-  enhance: ({ app }) => {
+  enhance({ app }) {
     app.component(
       __SVG_ICON_COMPONENT_NAME__,
       (props: IconPropsWithoutPrefix) =>
