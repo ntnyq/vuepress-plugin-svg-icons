@@ -2085,11 +2085,6 @@ packages:
     resolution: {integrity: sha512-wD5oz5xibMOPHzy13CyGmogB3phdvcDaB5t0W/Nr5Z2O/agcB8YwOz6e2Lsp10pNDzBoDO9nVa3RGs/2BttpHQ==}
     engines: {node: '>= 6'}
 
-  cssesc@3.0.0:
-    resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
-    engines: {node: '>=4'}
-    hasBin: true
-
   csso@5.0.5:
     resolution: {integrity: sha512-0LrrStPOdJj+SPCCrGhzryycLjwcgUSHBtxNA8aIDxf0GLsRh1cKYhB00Gd1lDOS4yGH69+SNn13+TWbVHETFQ==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
@@ -3931,8 +3926,8 @@ packages:
     peerDependencies:
       postcss: '>4 <9'
 
-  postcss-selector-parser@7.1.4:
-    resolution: {integrity: sha512-HeP7D2wyhkR+XaK6v4W8oRF62Dsz4flyuczALJp61GckGm42u1saSSJ/0auvcBqxs3jMRFEcPK34At/0JBKdOg==}
+  postcss-selector-parser@7.2.0:
+    resolution: {integrity: sha512-Khh/tERVBn0I1499dvBSHY0pWJloMJWUxDsOBM0CCDPAcVZ10Jl2L1qy1f19uEX22spa8Mv7DCdEQJc0cGwBhQ==}
     engines: {node: '>=4'}
 
   postcss-value-parser@4.2.0:
@@ -6068,11 +6063,11 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.12.2':
     optional: true
 
-  '@vitejs/plugin-vue@6.0.8(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))(vue@3.5.41(typescript@6.0.3))':
+  '@vitejs/plugin-vue@6.0.8(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))(vue@3.5.44(typescript@6.0.3))':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
       vite: 8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0)
-      vue: 3.5.41(typescript@6.0.3)
+      vue: 3.5.44(typescript@6.0.3)
 
   '@vitest/eslint-plugin@1.6.28(@typescript-eslint/eslint-plugin@8.72.1(@typescript-eslint/parser@8.72.1(eslint@10.14.0(jiti@2.7.0)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3))(eslint@10.14.0(jiti@2.7.0)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3))(eslint@10.14.0(jiti@2.7.0)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)':
     dependencies:
@@ -6282,7 +6277,7 @@ snapshots:
 
   '@vuepress/bundler-vite@2.0.0-rc.31(@types/node@26.6.6)(@vue/compiler-sfc@3.5.43)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(supports-color@8.1.1)(typescript@6.0.3)(yaml@2.9.0)':
     dependencies:
-      '@vitejs/plugin-vue': 6.0.8(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))(vue@3.5.41(typescript@6.0.3))
+      '@vitejs/plugin-vue': 6.0.8(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))(vue@3.5.44(typescript@6.0.3))
       '@vuepress/bundlerutils': 2.0.0-rc.31(@vue/compiler-sfc@3.5.43)(rolldown@1.2.2)(supports-color@8.1.1)(typescript@6.0.3)(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))
       '@vuepress/client': 2.0.0-rc.31(@vue/compiler-sfc@3.5.43)(rolldown@1.2.2)(typescript@6.0.3)(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))
       '@vuepress/core': 2.0.0-rc.31(@vue/compiler-sfc@3.5.43)(rolldown@1.2.2)(supports-color@8.1.1)(typescript@6.0.3)(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))
@@ -6294,8 +6289,8 @@ snapshots:
       postcss-load-config: 6.0.1(jiti@2.7.0)(postcss@8.5.25)(yaml@2.9.0)
       rolldown: 1.2.2
       vite: 8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0)
-      vue: 3.5.41(typescript@6.0.3)
-      vue-router: 5.2.0(@vue/compiler-sfc@3.5.43)(rolldown@1.2.2)(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))(vue@3.5.41(typescript@6.0.3))
+      vue: 3.5.44(typescript@6.0.3)
+      vue-router: 5.2.0(@vue/compiler-sfc@3.5.43)(rolldown@1.2.2)(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))(vue@3.5.44(typescript@6.0.3))
     transitivePeerDependencies:
       - '@farmfe/core'
       - '@pinia/colada'
@@ -6323,7 +6318,7 @@ snapshots:
 
   '@vuepress/bundler-vite@2.0.0-rc.31(@types/node@26.6.6)(@vue/compiler-sfc@3.5.44)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(supports-color@8.1.1)(typescript@6.0.3)(yaml@2.9.0)':
     dependencies:
-      '@vitejs/plugin-vue': 6.0.8(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))(vue@3.5.41(typescript@6.0.3))
+      '@vitejs/plugin-vue': 6.0.8(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))(vue@3.5.44(typescript@6.0.3))
       '@vuepress/bundlerutils': 2.0.0-rc.31(@vue/compiler-sfc@3.5.44)(rolldown@1.2.2)(supports-color@8.1.1)(typescript@6.0.3)(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))
       '@vuepress/client': 2.0.0-rc.31(@vue/compiler-sfc@3.5.44)(rolldown@1.2.2)(typescript@6.0.3)(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))
       '@vuepress/core': 2.0.0-rc.31(@vue/compiler-sfc@3.5.44)(rolldown@1.2.2)(supports-color@8.1.1)(typescript@6.0.3)(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))
@@ -6335,8 +6330,8 @@ snapshots:
       postcss-load-config: 6.0.1(jiti@2.7.0)(postcss@8.5.25)(yaml@2.9.0)
       rolldown: 1.2.2
       vite: 8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0)
-      vue: 3.5.41(typescript@6.0.3)
-      vue-router: 5.2.0(@vue/compiler-sfc@3.5.44)(rolldown@1.2.2)(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))(vue@3.5.41(typescript@6.0.3))
+      vue: 3.5.44(typescript@6.0.3)
+      vue-router: 5.2.0(@vue/compiler-sfc@3.5.44)(rolldown@1.2.2)(vite@8.2.0(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)(yaml@2.9.0))(vue@3.5.44(typescript@6.0.3))
     transitivePeerDependencies:
       - '@farmfe/core'
       - '@pinia/colada'
@@ -7303,8 +7298,6 @@ snapshots:
 
   css-what@7.0.0: {}
 
-  cssesc@3.0.0: {}
-
   csso@5.0.5:
     dependencies:
       css-tree: 2.2.1
@@ -7862,7 +7855,7 @@ snapshots:
       eslint: 10.14.0(jiti@2.7.0)(supports-color@8.1.1)
       natural-compare: 1.4.0
       nth-check: 2.1.1
-      postcss-selector-parser: 7.1.4
+      postcss-selector-parser: 7.2.0
       semver: 7.8.5
       vue-eslint-parser: 10.4.1(eslint@10.14.0(jiti@2.7.0)(supports-color@8.1.1))(supports-color@8.1.1)
       xml-name-validator: 5.0.0
@@ -9481,9 +9474,8 @@ snapshots:
     dependencies:
       postcss: 6.0.23
 
-  postcss-selector-parser@7.1.4:
+  postcss-selector-parser@7.2.0:
     dependencies:
-      cssesc: 3.0.0
       util-deprecate: 1.0.2
 
   postcss-value-parser@4.2.0: {}
