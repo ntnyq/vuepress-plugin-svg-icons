@@ -4,5 +4,6 @@ declare module '@vuepress/plugin-svg-icons/data' {
 
 declare module '*.css' {
   const content: string
+
   export default content
 }
